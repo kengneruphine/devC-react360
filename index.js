@@ -4,7 +4,8 @@ import {
   StyleSheet,
   Text,
   View,
-  VrButton, asset,Image
+  VrButton,
+  Image, asset
 } from 'react-360';
 
 export default class Hello360 extends React.Component {
@@ -23,26 +24,34 @@ export default class Hello360 extends React.Component {
     return (
       <View style={styles.panel}>
         <View style={styles.greetingBox}>
-          <VrButton onClick={this.incrementCount}
-          style={styles.button }
-          >
-          <Text>+</Text>
-          </VrButton>
-          <VrButton onClick={this.decrementCount}
-             style={styles.button } >
-            <Text>-</Text>
-          </VrButton>
-          <Text style={styles.greeting}>
-            {`count: ${this.state.count}`}
-          </Text>
-          <Text style={styles.greeting}>
-            Welcome to React 360
-          </Text>
-          <Image style={{
-            width: 3,
-            height: 3,
-          }}
-           source={asset('image.jpg')} />
+
+        <View style={styles.container}>
+
+        <View style={styles.question}>
+        <Text> What does the image say?</Text>
+        <Image style={{
+          width: 250,
+          height: 150,
+        }}
+        source={asset('image.jpg')}/>
+        </View>
+
+          <View style={styles.options}>
+            <VrButton style={styles.option}>
+              <Text>Adobe</Text>
+            </VrButton>
+            <VrButton style={styles.option}>
+              <Text>stocks</Text>
+            </VrButton>
+            <VrButton style={styles.option}>
+              <Text>Adobe stock</Text>
+            </VrButton>
+            <VrButton style={styles.option}>
+              <Text>stock Adobe</Text>
+            </VrButton>
+          </View>
+
+          </View>
         </View>
       </View>
     );
@@ -63,19 +72,50 @@ const styles = StyleSheet.create({
     backgroundColor: '#000000',
     borderColor: '#639dda',
     borderWidth: 2,
-    height : 500,
-    width: 500,
+    height: 400,
+    width: 750,
   },
   greeting: {
     fontSize: 30,
   },
   button: {
-    width:50,
+    width: 50,
     borderColor: '#639dda',
     borderWidth: 2,
     padding: 15,
     margin: 1,
   },
+  options: {
+    width: 300,
+    height: 250,
+    borderColor: '#639dda',
+    borderWidth: 2,
+    justifyContent: 'center',
+  },
+  option: {
+    width: 250,
+    borderColor: '#639dda',
+    borderWidth: 2,
+    padding: 5,
+    margin: 5,
+  },
+
+  question: {
+    width: 300,
+    height: 200,
+    borderColor: '#639dda',
+    borderWidth: 2,
+    margin: 2,
+
+  },
+
+  container:{
+    flex:1,
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+  },
+
+
 });
 
 AppRegistry.registerComponent('Hello360', () => Hello360);
