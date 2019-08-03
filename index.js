@@ -8,18 +8,16 @@ import {
   Image, asset
 } from 'react-360';
 
+import OptionsModule from './components/OptionsModule';
+
+const options = [{text :'Tabitha', id: 'tabitha'}, {text:'Grace', id:'grace'},
+{text:'Admin',id:'admin'},{text: 'Test',id:'test' }];
+
 export default class Hello360 extends React.Component {
   state = {
     count: 0,
   };
 
-  incrementCount = () => {
-    this.setState({ count: this.state.count + 1 });
-  };
-
-  decrementCount = () => {
-    this.setState({ count: this.state.count - 1 });
-  }
   render() {
     return (
       <View style={styles.panel}>
@@ -37,20 +35,9 @@ export default class Hello360 extends React.Component {
         </View>
 
           <View style={styles.options}>
-            <VrButton style={styles.option}>
-              <Text>Adobe</Text>
-            </VrButton>
-            <VrButton style={styles.option}>
-              <Text>stocks</Text>
-            </VrButton>
-            <VrButton style={styles.option}>
-              <Text>Adobe stock</Text>
-            </VrButton>
-            <VrButton style={styles.option}>
-              <Text>stock Adobe</Text>
-            </VrButton>
-          </View>
+           <OptionsModule options ={options} />
 
+          </View>
           </View>
         </View>
       </View>
@@ -85,21 +72,6 @@ const styles = StyleSheet.create({
     padding: 15,
     margin: 1,
   },
-  options: {
-    width: 300,
-    height: 250,
-    borderColor: '#639dda',
-    borderWidth: 2,
-    justifyContent: 'center',
-  },
-  option: {
-    width: 250,
-    borderColor: '#639dda',
-    borderWidth: 2,
-    padding: 5,
-    margin: 5,
-  },
-
   question: {
     width: 300,
     height: 200,
