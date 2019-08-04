@@ -8,7 +8,7 @@ import {
   Image, asset
 } from 'react-360';
 
-import OptionsModule from './components/OptionsModule';
+import OptionsModule from './components/options/OptionsModule';
 
 const options = [{text :'Tabitha', id: 'tabitha'}, {text:'Grace', id:'grace'},
 {text:'Admin',id:'admin'},{text: 'Test',id:'test' }];
