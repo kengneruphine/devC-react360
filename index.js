@@ -8,7 +8,8 @@ import {
   Image, asset
 } from 'react-360';
 
-import OptionsModule from './components/OptionsModule';
+//import OptionsModule from './components/OptionsModule';
+import welcome from './components/welcome';
 
 const options = [{text :'Tabitha', id: 'tabitha'}, {text:'Grace', id:'grace'},
 {text:'Admin',id:'admin'},{text: 'Test',id:'test' }];
@@ -90,4 +91,4 @@ const styles = StyleSheet.create({
 
 });
 
-AppRegistry.registerComponent('Hello360', () => Hello360);
+AppRegistry.registerComponent('Hello360', () => welcome);
