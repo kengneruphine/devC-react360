@@ -10,6 +10,10 @@ import {
   Image
 } from 'react-360';
 import D3Model from './components/D3Model';
+import Sphere from './components/Sphere';
+import Label1 from './components/Label1';
+import Label2 from './components/Label2';
+import Label3 from './components/Label3';
 
 export default class Hello360 extends React.Component {
   state = {
@@ -25,7 +29,13 @@ export default class Hello360 extends React.Component {
   }
   render() {
     return (
-      <D3Model />
+      <View>
+        <D3Model />
+        <Sphere />
+        <Label1 />
+        <Label2 />
+        <Label3 />
+      </View>
     );
   }
 };

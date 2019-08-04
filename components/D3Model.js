@@ -1,4 +1,4 @@
-import React, {PureComponent} from 'react';
+import React from 'react';
 import Entity from 'Entity';
 import {
   asset,
@@ -11,27 +11,18 @@ import {
 } from 'react-360';
 
 export default class D3Model extends React.Component {
-  state = {
-    count: 0,
-  };
-
-  incrementCount = () => {
-    this.setState({ count: this.state.count + 1 });
-  };
-
-  decrementCount = () => {
-    this.setState({ count: this.state.count - 1 });
-  }
-
   render() {
     return (
       <Entity
         source={{obj: asset('obj/Residential Buildings 003.obj'), mtl: asset('obj/Residential Buildings 003.mtl')}}
         style={{transform: [
-          {translate: [-1, 0, -1]},
-          {scaleX: 0.02},
-          {scaleY: 0.02},
-          {scaleZ: 0.02}
+          {translate: [-1.5, -1, -4]},
+          {scaleX: 0.09},
+          {scaleY: 0.09},
+          {scaleZ: 0.09},
+          {rotateX: 0},
+          {rotateY: 150},
+          {rotateZ: 0},
           ]
         }}
       />
