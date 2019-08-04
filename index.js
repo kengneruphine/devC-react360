@@ -1,10 +1,10 @@
 import React from 'react';
+import Entity from 'Entity';
 import {
   AppRegistry,
   StyleSheet,
   Text,
   View,
-  VrButton,
   Image, asset
 } from 'react-360';
 
