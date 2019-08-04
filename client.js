@@ -9,11 +9,11 @@ function init(bundle, parent, options = {}) {
     fullScreen: true,
     ...options,
   });
-
+  
   // Render your app content to the default cylinder surface
-  r360.renderToLocation(
+  r360.renderToSurface(
     r360.createRoot('Hello360', { /* initial props */ }),
-    r360.getDefaultLocation()
+    r360.getDefaultSurface()
   );
 
   // Load the initial environment

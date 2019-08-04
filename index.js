@@ -15,26 +15,26 @@ import Label1 from './components/Label1';
 import Label2 from './components/Label2';
 import Label3 from './components/Label3';
 
+//import OptionsModule from './components/OptionsModule';
+import welcome from './components/welcome';
+
+const options = [{text :'Tabitha', id: 'tabitha'}, {text:'Grace', id:'grace'},
+{text:'Admin',id:'admin'},{text: 'Test',id:'test' }];
+
 export default class Hello360 extends React.Component {
   state = {
     count: 0,
   };
 
-  incrementCount = () => {
-    this.setState({ count: this.state.count + 1 });
-  };
-
-  decrementCount = () => {
-    this.setState({ count: this.state.count - 1 });
-  }
   render() {
     return (
       <View>
-        <D3Model />
+{/*        <D3Model />
         <Sphere />
         <Label1 />
         <Label2 />
         <Label3 />
+*/}       {/*<welcome />*/}
       </View>
     );
   }
@@ -59,19 +59,37 @@ const styles = StyleSheet.create({
     backgroundColor: '#000000',
     borderColor: '#639dda',
     borderWidth: 2,
-    maxHeight : 500,
-    maxWidth: 500,
+    // maxHeight : 500,
+    // maxWidth: 500,
+    height: 400,
+    width: 750,
   },
   greeting: {
     fontSize: 30,
   },
   button: {
-    width:50,
+    width: 50,
     borderColor: '#639dda',
     borderWidth: 2,
     padding: 15,
     margin: 1,
   },
+  question: {
+    width: 300,
+    height: 200,
+    borderColor: '#639dda',
+    borderWidth: 2,
+    margin: 2,
+
+  },
+
+  container:{
+    flex:1,
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+  },
+
+
 });
 
-AppRegistry.registerComponent('Hello360', () => Hello360);
+AppRegistry.registerComponent('Hello360', () => welcome);
