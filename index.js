@@ -21,7 +21,7 @@ export default class Hello360 extends React.Component {
 
   render() {
     return (
-      <View style={styles.panel}>
+{/*      <View style={styles.panel}>
         <View style={styles.greetingBox}>
 
         <View style={styles.container}>
@@ -34,14 +34,15 @@ export default class Hello360 extends React.Component {
         }}
         source={asset('image.jpg')}/>
         </View>
-
+we
           <View style={styles.options}>
            <OptionsModule options ={options} />
 
           </View>
           </View>
         </View>
-      </View>
+      </View>*/}
+      <welcome />
     );
   }
 };
@@ -91,4 +92,4 @@ const styles = StyleSheet.create({
 
 });
 
-AppRegistry.registerComponent('Hello360', () => welcome);
+AppRegistry.registerComponent('Hello360', () => Hello360);
