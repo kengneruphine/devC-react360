@@ -1,7 +1,5 @@
 import React from 'react';
-import Entity from 'Entity';
 import {
-  asset,
   AppRegistry,
   StyleSheet,
   Text,
@@ -16,6 +14,7 @@ import Label2 from './components/Label2';
 import Label3 from './components/Label3';
 
 //import OptionsModule from './components/OptionsModule';
+import OptionsModule from './components/options/OptionsModule';
 import welcome from './components/welcome';
 
 const options = [{text :'Tabitha', id: 'tabitha'}, {text:'Grace', id:'grace'},
@@ -35,24 +34,40 @@ export default class Hello360 extends React.Component {
         <Label2 />
         <Label3 />
 */}       {/*<welcome />*/}
+{/*      <View style={styles.panel}>
+        <View style={styles.greetingBox}>
+
+        <View style={styles.container}>
+
+        <View style={styles.question}>
+        <Text> What does the image say?</Text>
+        <Image style={{
+          width: 250,
+          height: 150,
+        }}
+        source={asset('image.jpg')}/>
+        </View>
+
+          <View style={styles.options}>
+           <OptionsModule options ={options} />
+
+          </View>
+          </View>
+        </View>
+*/}
       </View>
     );
   }
 };
 
-// todo
-// insert a 3D image into the tutorial
-// go through the tutorials on the react360 website
-// learn more about the components
-
 const styles = StyleSheet.create({
   panel: {
     // Fill the entire surface
-    // width: 1000,
-    // height: 1000,
-    // backgroundColor: 'rgba(255, 255, 255, 0.4)',
-    // justifyContent: 'center',
-    // alignItems: 'center',
+    width: 1000,
+    height: 600,
+    backgroundColor: 'rgba(255, 255, 255, 0.4)',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   greetingBox: {
     padding: 20,
