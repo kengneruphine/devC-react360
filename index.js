@@ -5,10 +5,17 @@ import {
   Text,
   View,
   VrButton,
-  Image, asset
+  Image
 } from 'react-360';
+import D3Model from './components/D3Model';
+import Sphere from './components/Sphere';
+import Label1 from './components/Label1';
+import Label2 from './components/Label2';
+import Label3 from './components/Label3';
 
-import OptionsModule from './components/OptionsModule';
+//import OptionsModule from './components/OptionsModule';
+import OptionsModule from './components/options/OptionsModule';
+import welcome from './components/welcome';
 
 const options = [{text :'Tabitha', id: 'tabitha'}, {text:'Grace', id:'grace'},
 {text:'Admin',id:'admin'},{text: 'Test',id:'test' }];
@@ -20,7 +27,14 @@ export default class Hello360 extends React.Component {
 
   render() {
     return (
-      <View style={styles.panel}>
+      <View>
+{/*        <D3Model />
+        <Sphere />
+        <Label1 />
+        <Label2 />
+        <Label3 />
+*/}       {/*<welcome />*/}
+{/*      <View style={styles.panel}>
         <View style={styles.greetingBox}>
 
         <View style={styles.container}>
@@ -40,6 +54,7 @@ export default class Hello360 extends React.Component {
           </View>
           </View>
         </View>
+*/}
       </View>
     );
   }
@@ -59,6 +74,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#000000',
     borderColor: '#639dda',
     borderWidth: 2,
+    // maxHeight : 500,
+    // maxWidth: 500,
     height: 400,
     width: 750,
   },
@@ -90,4 +107,4 @@ const styles = StyleSheet.create({
 
 });
 
-AppRegistry.registerComponent('Hello360', () => Hello360);
+AppRegistry.registerComponent('Hello360', () => welcome);
