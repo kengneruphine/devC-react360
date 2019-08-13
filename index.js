@@ -14,6 +14,7 @@ import Label1 from './components/Label1';
 import Label2 from './components/Label2';
 import Label3 from './components/Label3';
 import Routes from './components/Router';
+import trying from './components/trying';
 
 //import OptionsModule from './components/OptionsModule';
 import OptionsModule from './components/options/OptionsModule';
