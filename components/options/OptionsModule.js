@@ -11,7 +11,7 @@ export default class OptionsModule extends React.Component {
     }
 
     clickHandler(evt){
-      console.log('we are in parent',evt.currentTarget);
+      //console.log('we are in parent',evt.currentTarget);
     }
 
     render (){

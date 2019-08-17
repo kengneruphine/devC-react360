@@ -1,6 +1,7 @@
 import React from 'react';
-import {View, VrButton, Text,StyleSheet,} from 'react-360';
+import {View, VrButton, Text,StyleSheet,asset, NativeModules} from 'react-360';
 
+const {AudioModule} = NativeModules;
 
 export default class Option extends React.Component{
     constructor(props){
@@ -25,7 +26,7 @@ export default class Option extends React.Component{
         // // which cursor the user was using, and which React tag was targeted
         // const inputEvent = event.inputEvent;
         // console.log(event)
-       console.log('we are in child');
+    //    console.log('we are in child');
        let newColor= this.state.btnStyle.backgroundColor === "red" ? "blue" : "red"
        this.setState({
             btnStyle: {
@@ -38,11 +39,17 @@ export default class Option extends React.Component{
             }
        })
 
+       AudioModule.playOneShot({
+        source: asset('click.wav'),
+      })  
     }
+
+
     render(){
         return(
           <View style={this.state.btnStyle}>
-          <VrButton onClick = {this.clickHandler} > 
+          <VrButton onClick ={this.clickHandler}
+            > 
           <Text> {this.props.Text || ''}</Text>
           </VrButton>
           </View>
