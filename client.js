@@ -16,11 +16,12 @@ function init(bundle, parent, options = {}) {
     r360.getDefaultLocation()
   ); */
   // Render your app content to the default cylinder surface
+  
   let indexSurface = new Surface(
     1000,
     600,
     Surface.SurfaceShape.Flat /* shape */
-  )
+  
   r360.renderToSurface(
     r360.createRoot('Index', {  }),
     r360.getDefaultSurface()

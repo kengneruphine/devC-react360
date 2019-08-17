@@ -35,8 +35,6 @@ VideoModule.play('myplayer', {
 Environment.setBackgroundVideo('myplayer');
 
 export default class Welcome extends React.Component {
-
-
   render() {
     return (
       <View style={styles.panel}>
@@ -119,3 +117,5 @@ const styles = StyleSheet.create({
 
 
 });
+
+//AppRegistry.registerComponent('Hello360', () => Routes);
