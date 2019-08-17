@@ -6,11 +6,14 @@ import {
 } from 'react-360';
 
 export default class D3Model extends React.Component {
+  constructor(props){
+      super(props)
+  }
   render() {
     return (
       <View>
         <Entity
-          source={{obj: asset('obj/Residential Buildings 003.obj'), mtl: asset('obj/Residential Buildings 003.mtl')}}
+          source={this.props.Model}
           style={{
             transform: [
               {translate: [-1, 0, -1]},

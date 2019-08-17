@@ -1,80 +1,38 @@
-import React,{Component} from 'react';
+import React from 'react';
 import {
-  View,
-  AppRegistry,
-  VrButton,
-  Image,
-  asset
+    AppRegistry,
+    Environment,
+    StyleSheet,
+    Text,
+    View,
+    VrButton,
+    asset
 } from 'react-360';
-import D3Model from './components/D3Model';
-import Sphere from './components/Sphere';
-import Label1 from './components/Label1';
-import Label2 from './components/Label2';
-import Label3 from './components/Label3';
-import Routes from './components/Router';
-import trying from './components/trying';
 
-import { MemoryRouter as Router, Route} from 'react-router';
-import Welcome from './pages/welcome';
-import Game from './pages/game';
 
 //import OptionsModule from './components/OptionsModule';
-import OptionsModule from './components/options/OptionsModule';
-import welcome from './components/welcome';
-
-export default class Index extends Component{
-  render(){
-    return(
-      <Router>
-        <View>
-          <Route exact path='/' component={Welcome}/>
-          <Route exact path='/welcome' component={Welcome}/>
-          <Route exact path='/game' component={Game}/>
-        </View>
-      </Router>
-    )
-  }
-}
-
-AppRegistry.registerComponent('Index', () => Index);
-
+import OptionsModule from '../components/options/OptionsModule';
+import { TextImage, TextModel } from '../components/questions/Questions';
 const options = [{ text: 'Tabitha', id: 'tabitha' }, { text: 'Grace', id: 'grace' },
 { text: 'Admin', id: 'admin' }, { text: 'Test', id: 'test' }];
 
-export default class Hello360 extends React.Component {
-  state = {
-    count: 0,
-  };
-
+export default class Game extends React.Component {
+  
   render() {
     return (
-      /*<View>
-        <D3Model />
-        <Sphere />
-        <Label1 />
-        <Label2 />
-        <Label3 />*/
-
       <View style={styles.panel}>
         <View style={styles.greetingBox}>
 
           <View style={styles.container}>
 
             <View style={styles.question}>
-              <Text> What does the image say?</Text>
-              <Image style={{
-                width: 250,
-                height: 150,
-              }}
-                source={asset('image.jpg')} />
+               <TextModel Model={{obj: asset('obj/Residential Buildings 003.obj'), mtl: asset('obj/Residential Buildings 003.mtl')}} Text="Here is a serious question." />
             </View>
 
             <View style={styles.options}>
               <OptionsModule options={options} />
-
             </View>
           </View>
-
 
           <View style={{flexDirection:'row',justifyContent: 'space-between'}}>
             <VrButton onClick={() => {
@@ -96,8 +54,8 @@ export default class Hello360 extends React.Component {
             </VrButton>
 
             <VrButton onClick={() => {
-            this.props.history.push('./trying');
-          }}>
+                this.props.history.push('./game');
+            }}>
             <Text
               style={{
                 backgroundColor: 'red',
@@ -160,14 +118,10 @@ const styles = StyleSheet.create({
     margin: 2,
 
   },
-
   container: {
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-between'
-  },
-
-
+  }
 });
-
-AppRegistry.registerComponent('Hello360', () => Routes);
+AppRegistry.registerComponent('Game', () => Game);

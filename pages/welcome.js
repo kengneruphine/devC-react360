@@ -12,8 +12,6 @@ import {
   NativeModules,
 } from 'react-360';
 
-import trying from './trying';
-
 // Play environmental audio:
 const { AudioModule } = NativeModules;
 
@@ -38,7 +36,7 @@ export default class Welcome extends React.Component {
   render() {
     return (
       <View style={styles.panel}>
-        
+
           <View>
             <Image source={asset('wlc.webp')} style={{
               width: 1000,
@@ -51,7 +49,7 @@ export default class Welcome extends React.Component {
             </Text>
           </View>
           <VrButton onClick={() => {
-            this.props.history.push('./index')
+            this.props.history.push('./game')
           }} 
            style={{backgroundColor: 'red',
           }}>
@@ -67,7 +65,6 @@ export default class Welcome extends React.Component {
               Click to Advance to Game Page.....
           </Text>
           </VrButton>
-
       </View>
     );
   }
@@ -75,7 +72,6 @@ export default class Welcome extends React.Component {
 
 const styles = StyleSheet.create({
   panel: {
-    // Fill the entire surface
     width: 1000,
     height: 600,
     backgroundColor: 'rgba(45, 274, 255, 0.4)',
@@ -106,16 +102,11 @@ const styles = StyleSheet.create({
     borderColor: '#639dda',
     borderWidth: 2,
     margin: 2,
-
   },
-
   container: {
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-between'
-  },
-
-
+  }
 });
 
-//AppRegistry.registerComponent('Hello360', () => Routes);
