@@ -2,14 +2,18 @@ import React from 'react';
 import {
   AppRegistry,
   View,
-  // VrButton,
-  // Image
+  VrButton,
+  Image,
+  asset
 } from 'react-360';
 import D3Model from './components/D3Model';
 import Sphere from './components/Sphere';
 import Label1 from './components/Label1';
 import Label2 from './components/Label2';
 import Label3 from './components/Label3';
+import Routes from './components/Router';
+import trying from './components/trying';
+
 //import OptionsModule from './components/OptionsModule';
 import OptionsModule from './components/options/OptionsModule';
 import welcome from './components/welcome';
@@ -17,8 +21,8 @@ import Devc from './component/Devc';
 import Lable from './component/Lable';
 // import OptionsModule from './components/OptionsModule';
 
-const options = [{text :'Tabitha', id: 'tabitha'}, {text:'Grace', id:'grace'},
-{text:'Admin',id:'admin'},{text: 'Test',id:'test' }];
+const options = [{ text: 'Tabitha', id: 'tabitha' }, { text: 'Grace', id: 'grace' },
+{ text: 'Admin', id: 'admin' }, { text: 'Test', id: 'test' }];
 
 
 
@@ -29,38 +33,77 @@ export default class Hello360 extends React.Component {
 
   render() {
     return (
-    <View>
-{/*        <D3Model />
+      /*<View>
+        <D3Model />
         <Sphere />
         <Label1 />
         <Label2 />
-        <Label3 />
-*/}     
-{/*      <View style={styles.panel}>
+        <Label3 />*/
+
+      <View style={styles.panel}>
         <View style={styles.greetingBox}>
 
-        <View style={styles.container}>
+          <View style={styles.container}>
 
-        <View style={styles.question}>
-        <Text> What does the image say?</Text>
-        <Image style={{
-          width: 250,
-          height: 150,
-        }}
-        source={asset('image.jpg')}/>
-        </View>
+            <View style={styles.question}>
+              <Text> What does the image say?</Text>
+              <Image style={{
+                width: 250,
+                height: 150,
+              }}
+                source={asset('image.jpg')} />
+            </View>
 
-          <View style={styles.options}>
-           <OptionsModule options ={options} />
+            <View style={styles.options}>
+              <OptionsModule options={options} />
+
+            </View>
+          </View>
+
+
+          <View style={{flexDirection:'row',justifyContent: 'space-between'}}>
+            <VrButton onClick={() => {
+              this.props.history.push('./welcome');
+            }}>
+              <Text
+                style={{
+                  backgroundColor: 'red',
+                  fontSize: 30,
+                  fontWeight: '500',
+                  paddingLeft: 0.2,
+                  paddingRight: 0.2,
+                  textAlign: 'center',
+                  textAlignVertical: 'center',
+                 
+                }}>
+                Back To Welcome Page.....
+          </Text>
+            </VrButton>
+
+            <VrButton onClick={() => {
+            this.props.history.push('./trying');
+          }}>
+            <Text
+              style={{
+                backgroundColor: 'red',
+                fontSize: 30,
+                fontWeight: '500',
+                paddingLeft: 0.2,
+                paddingRight: 0.2,
+                textAlign: 'center',
+                textAlignVertical: 'center',
+                
+              }}>
+              Go To Next Game Page.....
+          </Text>
+          </VrButton>
 
           </View>
-          </View>
+
+
         </View>
-*/}
-  {/* <welcome />
-      {/* <Lable/>
-      <Devc /> */}
-      </View> 
+
+      </View>
     );
   }
 };
@@ -103,8 +146,8 @@ const styles = StyleSheet.create({
 
   },
 
-  container:{
-    flex:1,
+  container: {
+    flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-between'
   },
@@ -112,4 +155,4 @@ const styles = StyleSheet.create({
 
 });
 
-AppRegistry.registerComponent('Hello360', () => welcome);
+AppRegistry.registerComponent('Hello360', () => Routes);
