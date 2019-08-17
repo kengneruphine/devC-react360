@@ -1,24 +1,26 @@
 import React from 'react';
 import {
   AppRegistry,
-  StyleSheet,
-  Text,
   View,
-  VrButton,
-  Image
+  // VrButton,
+  // Image
 } from 'react-360';
 import D3Model from './components/D3Model';
 import Sphere from './components/Sphere';
 import Label1 from './components/Label1';
 import Label2 from './components/Label2';
 import Label3 from './components/Label3';
-
 //import OptionsModule from './components/OptionsModule';
 import OptionsModule from './components/options/OptionsModule';
 import welcome from './components/welcome';
+import Devc from './component/Devc';
+import Lable from './component/Lable';
+// import OptionsModule from './components/OptionsModule';
 
 const options = [{text :'Tabitha', id: 'tabitha'}, {text:'Grace', id:'grace'},
 {text:'Admin',id:'admin'},{text: 'Test',id:'test' }];
+
+
 
 export default class Hello360 extends React.Component {
   state = {
@@ -27,13 +29,13 @@ export default class Hello360 extends React.Component {
 
   render() {
     return (
-      <View>
+    <View>
 {/*        <D3Model />
         <Sphere />
         <Label1 />
         <Label2 />
         <Label3 />
-*/}       {/*<welcome />*/}
+*/}     
 {/*      <View style={styles.panel}>
         <View style={styles.greetingBox}>
 
@@ -55,7 +57,10 @@ export default class Hello360 extends React.Component {
           </View>
         </View>
 */}
-      </View>
+  {/* <welcome />
+      {/* <Lable/>
+      <Devc /> */}
+      </View> 
     );
   }
 };
