@@ -5,8 +5,7 @@ import Option from './Option';
 
 export default class OptionsModule extends React.Component {
     constructor(props){
-        super(props)
-        
+        super(props)      
         this.clickHandler = this.clickHandler.bind(this);
     }
 
@@ -19,7 +18,7 @@ export default class OptionsModule extends React.Component {
           <View style = {styles.options} onInput={this.clickHandler} pointerEvents= 'box-none'>
           {this.props.options.map( (option, index) => {
               
-            return <Option key={index} Text={option.text} optionId={option.id}/>
+            return <Option key={index} {...option} />
           }) }
           </View>
         );
@@ -28,9 +27,6 @@ export default class OptionsModule extends React.Component {
 
 const styles = StyleSheet.create({
   options: {
-    width: 300,
-    height: 250,
-    borderColor: '#639dda',
     borderWidth: 2,
     justifyContent: 'center',
   },

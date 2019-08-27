@@ -5,77 +5,86 @@ import {
     StyleSheet,
     Text,
     View,
+    Image,
     VrButton,
     asset
 } from 'react-360';
-
-
+import { Button } from 'react-native';
+import {NativeModules} from 'react-360';
+const {MyModule} = NativeModules;
 //import OptionsModule from './components/OptionsModule';
 import OptionsModule from '../components/options/OptionsModule';
 import { TextImage, TextModel } from '../components/questions/Questions';
-const options = [{ text: 'Tabitha', id: 'tabitha' }, { text: 'Grace', id: 'grace' },
-{ text: 'Admin', id: 'admin' }, { text: 'Test', id: 'test' }];
-
+const {TemporalStore} = NativeModules;
+const options = [{ text: 'Tabitha', id: 'tabitha' }, { text: 'Grace', id: 'grace', ans: true },
+{ text: 'Admin', id: 'admin'}, { text: 'Test', id: 'test' }];
+const quiz = {
+   answer: 'grace',
+   answerSelected: false
+}
 export default class Game extends React.Component {
-  
+  constructor(props){
+      super(props)
+      this.state = {
+        answer: ''
+      }
+      this.showAnswer = this.showAnswer.bind(this)
+  } 
+  showAnswer(){
+     // search quiz for answer
+    if(TemporalStore.quiz.answerSelected){
+      for( let option of options)
+        option.ans? this.setState({answer : option.text}) : ''
+    }
+  }
   render() {
     return (
       <View style={styles.panel}>
-        <View style={styles.greetingBox}>
-
+        <View style={{width: 55, marginRight: 20, position: 'relative', left: 20}}>
+          <VrButton style={styles.button} >
+             <Text>Back</Text>
+          </VrButton>
+        </View>
+        <View style={styles.quizBox}>
           <View style={styles.container}>
-
             <View style={styles.question}>
                <TextModel Model={{obj: asset('obj/Residential Buildings 003.obj'), mtl: asset('obj/Residential Buildings 003.mtl')}} Text="Here is a serious question." />
             </View>
-
             <View style={styles.options}>
               <OptionsModule options={options} />
             </View>
           </View>
-
-          <View style={{flexDirection:'row',justifyContent: 'space-between'}}>
-            <VrButton onClick={() => {
+        </View>
+        <View style={[styles.answerContainer, {textAlign: 'center'}]}>
+            <Text>{this.state.answer}</Text>
+        </View>
+        <View style={styles.actionsContainer}>
+            <VrButton style={styles.button}  onClick={() => {
               this.props.history.push('./welcome');
             }}>
               <Text
-                style={{
-                  backgroundColor: 'red',
-                  fontSize: 30,
-                  fontWeight: '500',
-                  paddingLeft: 0.2,
-                  paddingRight: 0.2,
-                  textAlign: 'center',
-                  textAlignVertical: 'center',
-                 
-                }}>
-                Back To Welcome Page.....
-          </Text>
+                style={[styles.actions, {backgroundColor: 'red'}]}>
+                Back
+              </Text>
             </VrButton>
 
-            <VrButton onClick={() => {
-                this.props.history.push('./game');
+            <VrButton style={styles.button} onClick={() => {
+                this.showAnswer()
             }}>
-            <Text
-              style={{
-                backgroundColor: 'red',
-                fontSize: 30,
-                fontWeight: '500',
-                paddingLeft: 0.2,
-                paddingRight: 0.2,
-                textAlign: 'center',
-                textAlignVertical: 'center',
-                
+              <Text
+                style={[styles.actions, {backgroundColor: 'green'}]}>
+                Show Answer
+              </Text>
+            </VrButton>
+            <VrButton  style={styles.button} onClick={() => {
+                this.props.history.push('./game');
               }}>
-              Go To Next Game Page.....
-          </Text>
-          </VrButton>
-
+              <Text
+                style={[styles.actions, {backgroundColor: 'green'}]}>
+                Next
+              </Text>
+            </VrButton>
           </View>
-
-
-        </View>
-
       </View>
     );
   }
@@ -84,36 +93,41 @@ export default class Game extends React.Component {
 const styles = StyleSheet.create({
   panel: {
     // Fill the entire surface
+    paddingTop: 10,
+    position: 'relative',
     width: 1000,
     height: 600,
-    backgroundColor: 'rgba(255, 255, 255, 0.4)',
-    justifyContent: 'center',
-    alignItems: 'center',
+    backgroundColor: 'black',
   },
-  greetingBox: {
-    padding: 20,
+  quizBox: {
+    marginTop: 20,
+    position: 'relative',
+    left: 50,
+    padding: 5,
     backgroundColor: '#000000',
-    borderColor: '#639dda',
     borderWidth: 2,
-    // maxHeight : 500,
-    // maxWidth: 500,
     height: 400,
-    width: 750,
+    width: 700,
   },
-  greeting: {
-    fontSize: 30,
+  answerContainer: {
+    height: 50
+  },
+  options: {
+    padding: 5,
+    backgroundColor: '#000000',
+    borderWidth: 2,
+    width: 399,
   },
   button: {
-    width: 50,
-    borderColor: '#639dda',
-    borderWidth: 2,
-    padding: 15,
+    borderWidth: 1,
+    padding: 5,
     margin: 1,
+    borderColor: 'white',
+    borderRadius: 5,
+    backgroundColor: 'transparent'
   },
   question: {
-    width: 300,
-    height: 200,
-    borderColor: '#639dda',
+    width: 399,
     borderWidth: 2,
     margin: 2,
 
@@ -122,6 +136,19 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-between'
+  },
+  actionsContainer: {flex:1, height: 50, flexDirection:'row',width: 200, justifyContent: 'space-between'},
+  actions: {
+    fontSize: 28,
+    fontWeight: '400',
+    paddingLeft: 0.5,
+    paddingRight: 0.5,
+    paddingTop: 0.5,
+    paddingBottom: 0.5,
+    marginLeft: 10,
+    textAlign: 'center',
+    textAlignVertical: 'center',
   }
+
 });
 AppRegistry.registerComponent('Game', () => Game);
