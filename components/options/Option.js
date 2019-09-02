@@ -51,7 +51,7 @@ export default class Option extends React.Component{
               btnStyle: {
                   width: 350,
                   borderWidth: 2,
-                  fontSize: 28,
+                  fontSize: 28,                                                                                                                                                                                                                                                                                                                                 
                   padding: 5,
                   margin: 5,
                   backgroundColor : "red"

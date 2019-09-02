@@ -11,17 +11,16 @@ import {
 } from 'react-360';
 import { Button } from 'react-native';
 import {NativeModules} from 'react-360';
-const {MyModule} = NativeModules;
 //import OptionsModule from './components/OptionsModule';
 import OptionsModule from '../components/options/OptionsModule';
 import { TextImage, TextModel } from '../components/questions/Questions';
 const {TemporalStore} = NativeModules;
+// load the questions
+import questions from '../components/questions/questions.json'
+console.log(questions)
 const options = [{ text: 'Tabitha', id: 'tabitha' }, { text: 'Grace', id: 'grace', ans: true },
 { text: 'Admin', id: 'admin'}, { text: 'Test', id: 'test' }];
-const quiz = {
-   answer: 'grace',
-   answerSelected: false
-}
+
 export default class Game extends React.Component {
   constructor(props){
       super(props)

@@ -12,7 +12,6 @@ import {
   NativeModules,
 } from 'react-360';
 
-import trying from './trying';
 
 // Play environmental audio:
 const { AudioModule } = NativeModules;
@@ -35,8 +34,6 @@ VideoModule.play('myplayer', {
 Environment.setBackgroundVideo('myplayer');
 
 export default class Welcome extends React.Component {
-
-
   render() {
     return (
       <View style={styles.panel}>

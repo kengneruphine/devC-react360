@@ -1,51 +1,61 @@
-// This file contains the boilerplate to execute your React app.
-// If you want to modify your application's content, start in "index.js"
-var GLOBAL_H = "hello guys"
-import {ReactInstance, Surface} from 'react-360-web';
-      // Initialize the React 360 application
-import {Module} from 'react-360-web';
 
-// instance used for wide application data storage
+import {ReactInstance, Surface, Module} from 'react-360-web';
+import { card } from './utils'
+
+// instance used for wide application data transport
 class TemporalStore extends Module {
   quiz = {  
     answerSelected: false,
     answerFound: false
   }
   constructor() {
-      super('TemporalStore'); // Makes this module available at NativeModules.MyModule
+      super('TemporalStore')
   }
-  // This method will be exposed to the React app
 }
-
+class SurfaceManagement extends Module{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+  static surfaces = {}
+  static r360 = null
+  constructor(surfaces){
+    super('SurfaceManagement')
+  }
+  detachSurface(name){
+    if(name && SurfaceManagement.surfaces[name])
+      SurfaceManagement.r360.detachRoot(SurfaceManagement.surfaces[name])
+  }
+  attachSurface(name, params){
+    if(!name || !params)
+        return
+    const Card = card(params)
+    const surface = SurfaceManagement.r360.renderToSurface(
+      SurfaceManagement.r360.createRoot(name, {}),
+      Card,
+      name
+    )
+    SurfaceManagement.surfaces[name] = surface
+  }
+  detachAll(){
+    for(let surface in SurfaceManagement.surfaces){
+      SurfaceManagement.r360.detachRoot(SurfaceManagement.surfaces[surface])
+    }
+  }
+}
 
 function init(bundle, parent, options = {}) {
   const r360 = new ReactInstance(bundle, parent, {
     // Add custom options here
     fullScreen: true,
-    nativeModules: [ new TemporalStore()],
+    nativeModules: [ new TemporalStore(), new SurfaceManagement()],
     ...options,
-  });
-  
-  /*  Render your app content to the default location
-  r360.renderToLocation(
-    r360.createRoot('Hello360', {  }),
-    r360.getDefaultLocation()
-  ); */
-  // Render your app content to the default cylinder surface
-  let indexSurface = new Surface(
-    1000,
-    600,
-    Surface.SurfaceShape.Flat /* shape */
-  )
+  })
+  SurfaceManagement.r360 = r360
+  const IndexSurface = r360.getDefaultSurface();
+  //IndexSurface.setShape(Surface.SurfaceShape.Flat);
   r360.renderToSurface(
     r360.createRoot('Index', {  }),
-    r360.getDefaultSurface()
-  );
+    IndexSurface,
+    'Index'
+  )
   // Load the initial environment
   r360.compositor.setBackground(r360.getAssetURL('360_world.jpg'));
-
-  // setup storage
-  //await AsyncStorage.setItem('quiz', JSON.stringify({ answerFound: false, answer: null}))
 }
-
 window.React360 = {init};

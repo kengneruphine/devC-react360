@@ -1,0 +1,93 @@
+{
+    "malaria": [
+        {   
+            "id": "54ef18fb",
+            "text": " Trophozoites, Schizonts and gametocytes of all the malarial parasites are seen in the peripheral blood smear except;",
+            "options": [
+                {
+                    "text": "P. falciparum",
+                    "ans": true
+                },
+                {
+                    "text": "P. ovale",
+                    "ans": false
+                },
+                {
+                    "text": "P. malariae",
+                    "ans": false
+                },
+                {
+                    "text": "P. vivax",
+                    "ans": false
+                }
+            ]
+        },
+        {
+            "id": "72e5c44e",
+            "text": " Black water fever is a special manifestation of malaria caused by",
+            "options": [
+                {
+                    "text": "P. falciparum",
+                    "ans": true
+                },
+                {
+                    "text": "P. ovale",
+                    "ans": false
+                },
+                {
+                    "text": "P. malariae",
+                    "ans": false
+                },
+                {
+                    "text": "P. vivax",
+                    "ans": false
+                }
+            ]
+        },
+        {
+            "id": "cb19da5ff6a3",
+            "text": " After sporozoite gain entrance to human body it undergoes developmental cycle first in liver than in RBC, only after which fever is seen. This incubation period varies between plasmodium species, and ………….. species has longest incubation period.",
+            "options": [
+                {
+                    "text": "P. falciparum",
+                    "ans": false
+                },
+                {
+                    "text": "P. ovale",
+                    "ans": false
+                },
+                {
+                    "text": "P. malariae",
+                    "ans": true
+                },
+                {
+                    "text": "P. vivax",
+                    "ans": false
+                }
+            ]
+        },
+        {
+            "id": "cb19da5ff6a3",
+            "text": "Mosquitoes is/are the vector in the following disorder(s)",
+            "options": [
+                {
+                    "text": "Onchocerciasis",
+                    "ans": false
+                },
+                {
+                    "text": "Visceral leishmaniasis",
+                    "ans": false
+                },
+                {
+                    "text": "African trypanosomiasis",
+                    "ans": false
+                },
+                {
+                    "text": "Bancroftian filariasis",
+                    "ans": true
+                }
+            ]
+
+        }
+    ]
+}
