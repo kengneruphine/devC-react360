@@ -1,4 +1,5 @@
 import React from 'react';
+import { history } from '../utils'
 import {
   AppRegistry,
   StyleSheet,
@@ -31,13 +32,14 @@ Environment.setBackgroundVideo('myplayer');
 export default class Dashboard extends React.Component {
   constructor(props){
     super(props)
+    SurfaceManagement.props = props
     SurfaceManagement.attachSurface('VideoCard',[-0.7, 0] )
     SurfaceManagement.attachSurface('QuizCard', [0, 0] )
     SurfaceManagement.attachSurface('ExploreCard',[0.7, 0] )
   }
   render() {
     return (
-      <View style={styles.panel}>
+      <View style={[styles.panel, {display: 'none'}]}>
       </View>
     );
   }
@@ -53,27 +55,39 @@ export class QuizCard extends React.Component{
               justifyContent: 'center',
               alignItems: 'center',
             }} />
-            <VrButton style={[styles.cardLabel]}>
-                <Text>Play</Text>
-            </VrButton>
+            <ButtonLink link={'/game/options'} text={'Quiz'}/>
         </View>)
     }
 }
 export class ExploreCard extends React.Component{
+ 
     render(){
       return (
         <View style={styles.card}>
-             <Image source={asset('img/explore.jpg')} style={{
+            <Image source={asset('img/explore.jpg')} style={{
               width: 500,
               height: 300,
               justifyContent: 'center',
               alignItems: 'center',
             }} />
-            <VrButton style={[styles.cardLabel]}>
-                <Text>Explore</Text>
-            </VrButton>
+            <ButtonLink link={'./explore'} text={'Explore'}/>
         </View>)
     }
+}
+export class ButtonLink extends React.Component{
+  constructor(props){
+    super(props)
+    console.log(props)
+  }
+  render(){
+    return (<View  style={[styles.cardLabel]} >
+        <VrButton onClick={() => {
+          SurfaceManagement.props.history.push(this.props.link)
+        }} >
+          <Text>{this.props.text}</Text>
+        </VrButton>
+      </View>)
+  }
 }
 export class VideoCard extends React.Component{
     render(){
@@ -85,9 +99,7 @@ export class VideoCard extends React.Component{
               justifyContent: 'center',
               alignItems: 'center',
             }} />
-            <VrButton style={[styles.cardLabel]}>
-                <Text>Watch</Text>
-            </VrButton>
+            <ButtonLink link={'./video'} text={'Watch'}/>
         </View>)
     }
 }
@@ -115,7 +127,6 @@ const styles = StyleSheet.create({
     width: 80,
     backgroundColor: 'black',
     padding: 10,
-    fontSize: 18,
     alignItems: 'center'
   },
   button: {

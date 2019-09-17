@@ -1,4 +1,4 @@
-
+import { MemoryRouter as Router, Route} from 'react-router';
 import { Surface } from 'react-360-web' 
 export function card(angle){
     let Card = new Surface(
@@ -9,3 +9,6 @@ export function card(angle){
       angle ? Card.setAngle(...angle) : ""
       return Card
 }
+export function history(){
+  return Router()
+} 

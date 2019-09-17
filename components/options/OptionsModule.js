@@ -16,10 +16,10 @@ export default class OptionsModule extends React.Component {
     render (){
         return(
           <View style = {styles.options} onInput={this.clickHandler} pointerEvents= 'box-none'>
-          {this.props.options.map( (option, index) => {
+          {this.props.options ? this.props.options.map( (option, index) => {
               
             return <Option key={index} {...option} />
-          }) }
+          }) : null }
           </View>
         );
     }

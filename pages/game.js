@@ -9,26 +9,47 @@ import {
     VrButton,
     asset
 } from 'react-360';
-import { Button } from 'react-native';
 import {NativeModules} from 'react-360';
 //import OptionsModule from './components/OptionsModule';
 import OptionsModule from '../components/options/OptionsModule';
-import { TextImage, TextModel } from '../components/questions/Questions';
-const {TemporalStore} = NativeModules;
+import { TextImage, TextModel, SimpleText } from '../components/questions/Questions';
+const {TemporalStore, SurfaceManagement} = NativeModules;
 // load the questions
 import questions from '../components/questions/questions.json'
-console.log(questions)
-const options = [{ text: 'Tabitha', id: 'tabitha' }, { text: 'Grace', id: 'grace', ans: true },
-{ text: 'Admin', id: 'admin'}, { text: 'Test', id: 'test' }];
 
 export default class Game extends React.Component {
   constructor(props){
       super(props)
       this.state = {
-        answer: ''
+        answer: '',
+        questions: questions[TemporalStore.quiz.currentQuiz],
+        options: null,
+        currentQuestionIndex: 0
       }
       this.showAnswer = this.showAnswer.bind(this)
+      this.nextQuestion = this.nextQuestion.bind(this)
+      this.formQuestion = this.formQuestion.bind(this)
+      this.showQuiz = this.showQuiz.bind(this)
+    
   } 
+  componentDidMount(){
+      this.showQuiz()
+  }
+  formQuestion(question){
+      let jsxFormatedQuestion = null
+      switch(question.type){
+        case 'simple':
+          jsxFormatedQuestion = <SimpleText Text={question.text} />
+          break
+        default:
+      }
+      return jsxFormatedQuestion
+  }
+  showQuiz(){
+    const question = this.state.questions[this.state.currentQuestionIndex]
+    const options = question.options
+    this.setState({currentQuestion: this.formQuestion(question), currentQuestionOptions: options})
+  }
   showAnswer(){
      // search quiz for answer
     if(TemporalStore.quiz.answerSelected){
@@ -36,25 +57,31 @@ export default class Game extends React.Component {
         option.ans? this.setState({answer : option.text}) : ''
     }
   }
+  nextQuestion(){
+
+  }
   render() {
     return (
       <View style={styles.panel}>
         <View style={{width: 55, marginRight: 20, position: 'relative', left: 20}}>
-          <VrButton style={styles.button} >
+          <VrButton style={styles.button} onClick={() => this.props.history.goBack()} >
              <Text>Back</Text>
           </VrButton>
         </View>
         <View style={styles.quizBox}>
           <View style={styles.container}>
             <View style={styles.question}>
+                {
+                  this.state.currentQuestion
+                }
                <TextModel Model={{obj: asset('obj/Residential Buildings 003.obj'), mtl: asset('obj/Residential Buildings 003.mtl')}} Text="Here is a serious question." />
             </View>
             <View style={styles.options}>
-              <OptionsModule options={options} />
+              <OptionsModule options={this.state.currentQuestionOptions} />
             </View>
           </View>
         </View>
-        <View style={[styles.answerContainer, {textAlign: 'center'}]}>
+        <View style={[styles.answerContainer]}>
             <Text>{this.state.answer}</Text>
         </View>
         <View style={styles.actionsContainer}>
@@ -67,17 +94,13 @@ export default class Game extends React.Component {
               </Text>
             </VrButton>
 
-            <VrButton style={styles.button} onClick={() => {
-                this.showAnswer()
-            }}>
+            <VrButton style={styles.button} onClick={this.showAnswer()}>
               <Text
                 style={[styles.actions, {backgroundColor: 'green'}]}>
                 Show Answer
               </Text>
             </VrButton>
-            <VrButton  style={styles.button} onClick={() => {
-                this.props.history.push('./game');
-              }}>
+            <VrButton  style={styles.button} onClick={this.nextQuestion}>
               <Text
                 style={[styles.actions, {backgroundColor: 'green'}]}>
                 Next
@@ -138,16 +161,13 @@ const styles = StyleSheet.create({
   },
   actionsContainer: {flex:1, height: 50, flexDirection:'row',width: 200, justifyContent: 'space-between'},
   actions: {
-    fontSize: 28,
     fontWeight: '400',
     paddingLeft: 0.5,
     paddingRight: 0.5,
     paddingTop: 0.5,
     paddingBottom: 0.5,
     marginLeft: 10,
-    textAlign: 'center',
     textAlignVertical: 'center',
   }
 
 });
-AppRegistry.registerComponent('Game', () => Game);

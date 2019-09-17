@@ -6,6 +6,7 @@ import {
 import { MemoryRouter as Router, Route} from 'react-router';
 import Welcome from './pages/welcome';
 import Game from './pages/game';
+import GameOptions from './pages/gameOptions';
 import Dashboard from './pages/dashboard';
 
 export default class Index extends Component{
@@ -15,7 +16,8 @@ export default class Index extends Component{
         <View>
           <Route exact path='/' component={Welcome}/>
           <Route exact path='/welcome' component={Welcome}/>
-          <Route exact path='/game' component={Game}/>
+          <Route exact path='/game/options' component={GameOptions}/>
+          <Route exact path='/game/play' component={Game}/>
           <Route exact path='/dashboard' component={Dashboard}/>
         </View>
       </Router>

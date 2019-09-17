@@ -13,7 +13,6 @@ export default class Option extends React.Component{
                 borderWidth: 2,
                 padding: 5, 
                 margin: 5,
-                fontSize: 28,
                 backgroundColor :'black',
             }
         }
@@ -40,7 +39,6 @@ export default class Option extends React.Component{
               btnStyle: {
                   width: 350,
                   borderWidth: 2,
-                  fontSize: 28,
                   padding: 5,
                   margin: 5,
                   backgroundColor : color,
@@ -51,7 +49,6 @@ export default class Option extends React.Component{
               btnStyle: {
                   width: 350,
                   borderWidth: 2,
-                  fontSize: 28,                                                                                                                                                                                                                                                                                                                                 
                   padding: 5,
                   margin: 5,
                   backgroundColor : "red"

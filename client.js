@@ -6,7 +6,8 @@ import { card } from './utils'
 class TemporalStore extends Module {
   quiz = {  
     answerSelected: false,
-    answerFound: false
+    answerFound: false,
+    currentQuiz: ''
   }
   constructor() {
       super('TemporalStore')
@@ -14,6 +15,7 @@ class TemporalStore extends Module {
 }
 class SurfaceManagement extends Module{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
   static surfaces = {}
+  static props = null
   static r360 = null
   constructor(surfaces){
     super('SurfaceManagement')
