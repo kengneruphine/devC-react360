@@ -22,6 +22,8 @@ export default class Game extends React.Component {
       super(props)
       this.state = {
         answer: '',
+        correctAnswers: 0,
+        showScore: false,
         questions: questions[TemporalStore.quiz.currentQuiz],
         options: null,
         currentQuestionIndex: 0
@@ -29,6 +31,7 @@ export default class Game extends React.Component {
       this.showAnswer = this.showAnswer.bind(this)
       this.nextQuestion = this.nextQuestion.bind(this)
       this.formQuestion = this.formQuestion.bind(this)
+      this.prevQuestion = this.prevQuestion.bind(this)
       this.showQuiz = this.showQuiz.bind(this)
     
   } 
@@ -46,6 +49,13 @@ export default class Game extends React.Component {
       return jsxFormatedQuestion
   }
   showQuiz(){
+    // do nothing if we are at the end of the questions or currenQuestionIndex is negative
+    if(this.state.currentQuestionIndex < 0 || this.state.currentQuestionIndex >= this.state.questions.length){
+      // reset currentQuestionIndex to zero if it;s negative or to last question index
+      return this.state.currentQuestionIndex < 0 ? this.state.currentQuestionIndex = 0 : this.state.currentQuestionIndex = this.state.questions.length -1
+    }
+    TemporalStore.quiz.answerSelected = false;
+    TemporalStore.quiz.answerFound = false;
     const question = this.state.questions[this.state.currentQuestionIndex]
     const options = question.options
     this.setState({currentQuestion: this.formQuestion(question), currentQuestionOptions: options})
@@ -58,14 +68,23 @@ export default class Game extends React.Component {
     }
   }
   nextQuestion(){
-
+    if(TemporalStore.quiz.answerFound)
+      this.setState({correctAnswers: this.state.correctAnswers + 1})
+    this.state.currentQuestionIndex = this.state.currentQuestionIndex + 1
+    if(this.state.currentQuestionIndex == this.state.questions.length)
+      this.setState({showScore: true})
+    this.showQuiz()
+  }
+  prevQuestion(){
+    this.state.currentQuestionIndex = this.state.currentQuestionIndex - 1
+    this.showQuiz()
   }
   render() {
     return (
       <View style={styles.panel}>
-        <View style={{width: 55, marginRight: 20, position: 'relative', left: 20}}>
+        <View style={{width:55, marginRight: 20, position: 'relative', left: 20}}>
           <VrButton style={styles.button} onClick={() => this.props.history.goBack()} >
-             <Text>Back</Text>
+             <Text style={{fontSize: 12}}>BACK</Text>
           </VrButton>
         </View>
         <View style={styles.quizBox}>
@@ -84,28 +103,30 @@ export default class Game extends React.Component {
         <View style={[styles.answerContainer]}>
             <Text>{this.state.answer}</Text>
         </View>
-        <View style={styles.actionsContainer}>
-            <VrButton style={styles.button}  onClick={() => {
-              this.props.history.push('./welcome');
-            }}>
+        <View style={[styles.actionsContainer]}>
+            {/* <VrButton style={[styles.button, {backgroundColor: 'red', borderColor: 'transparent', margin: 5, height: 50} ]} onClick={this.prevQuestion} >
               <Text
-                style={[styles.actions, {backgroundColor: 'red'}]}>
-                Back
+                style={[styles.actions]}>
+                PREV
+              </Text>
+            </VrButton> */}
+            <VrButton  style={[styles.button, {backgroundColor: 'green', borderColor: 'transparent', margin: 5, height: 50} ]} onClick={this.nextQuestion}>
+              <Text
+                style={[styles.actions]}>
+                NEXT
               </Text>
             </VrButton>
-
-            <VrButton style={styles.button} onClick={this.showAnswer()}>
-              <Text
-                style={[styles.actions, {backgroundColor: 'green'}]}>
-                Show Answer
-              </Text>
-            </VrButton>
-            <VrButton  style={styles.button} onClick={this.nextQuestion}>
-              <Text
-                style={[styles.actions, {backgroundColor: 'green'}]}>
-                Next
-              </Text>
-            </VrButton>
+            { this.state.showScore ? 
+              (
+                <VrButton style={[styles.button, {backgroundColor: 'red', borderColor: 'transparent', margin: 5, height: 50} ]} onClick={this.prevQuestion} >
+                  <Text
+                    style={[styles.actions]}>
+                    SCORE: {this.state.correctAnswers}/{this.state.questions.length}
+                  </Text>
+                </VrButton>
+              ) : null
+          }
+              
           </View>
       </View>
     );
@@ -142,11 +163,10 @@ const styles = StyleSheet.create({
   },
   button: {
     borderWidth: 1,
-    padding: 5,
+    padding: 10,
     margin: 1,
     borderColor: 'white',
-    borderRadius: 5,
-    backgroundColor: 'transparent'
+    borderRadius: 5
   },
   question: {
     width: 399,
@@ -159,13 +179,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between'
   },
-  actionsContainer: {flex:1, height: 50, flexDirection:'row',width: 200, justifyContent: 'space-between'},
+  actionsContainer: {flex:1, height: 30, flexDirection:'row',width: 200},
   actions: {
     fontWeight: '400',
-    paddingLeft: 0.5,
-    paddingRight: 0.5,
-    paddingTop: 0.5,
-    paddingBottom: 0.5,
     marginLeft: 10,
     textAlignVertical: 'center',
   }

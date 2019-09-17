@@ -20,6 +20,9 @@ export default class Option extends React.Component{
         // store the reference of the right amswer
         this.props.ans ? TemporalStore.quiz.ansRef = this.btn : ""
         this.clickHandler = this.clickHandler.bind(this);
+        TemporalStore.quiz.answerSelected = false
+        TemporalStore.quiz.answerFound = false
+
     }
     async clickHandler(){
         // const event = e.nativeEvent; // Extract the value from the runtime
