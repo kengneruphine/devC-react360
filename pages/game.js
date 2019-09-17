@@ -49,13 +49,6 @@ export default class Game extends React.Component {
       return jsxFormatedQuestion
   }
   showQuiz(){
-    // do nothing if we are at the end of the questions or currenQuestionIndex is negative
-    if(this.state.currentQuestionIndex < 0 || this.state.currentQuestionIndex >= this.state.questions.length){
-      // reset currentQuestionIndex to zero if it;s negative or to last question index
-      return this.state.currentQuestionIndex < 0 ? this.state.currentQuestionIndex = 0 : this.state.currentQuestionIndex = this.state.questions.length -1
-    }
-    TemporalStore.quiz.answerSelected = false;
-    TemporalStore.quiz.answerFound = false;
     const question = this.state.questions[this.state.currentQuestionIndex]
     const options = question.options
     this.setState({currentQuestion: this.formQuestion(question), currentQuestionOptions: options})
@@ -68,11 +61,20 @@ export default class Game extends React.Component {
     }
   }
   nextQuestion(){
-    if(TemporalStore.quiz.answerFound)
-      this.setState({correctAnswers: this.state.correctAnswers + 1})
     this.state.currentQuestionIndex = this.state.currentQuestionIndex + 1
-    if(this.state.currentQuestionIndex == this.state.questions.length)
-      this.setState({showScore: true})
+    // show score if we at the end of the questions
+    if(this.state.currentQuestionIndex >= this.state.questions.length){
+        this.state.currentQuestionIndex = this.state.questions.length -1
+        return this.setState({showScore: true})
+    }
+    // update score for every correct answer
+    if(TemporalStore.quiz.answerFound)
+        this.setState({correctAnswers: this.state.correctAnswers + 1})
+    
+        // reset selected answer and if answer was found
+    TemporalStore.quiz.answerSelected = false;
+    TemporalStore.quiz.answerFound = false;
+    // show next question
     this.showQuiz()
   }
   prevQuestion(){
@@ -118,7 +120,7 @@ export default class Game extends React.Component {
             </VrButton>
             { this.state.showScore ? 
               (
-                <VrButton style={[styles.button, {backgroundColor: 'red', borderColor: 'transparent', margin: 5, height: 50} ]} onClick={this.prevQuestion} >
+                <VrButton style={[styles.button, {backgroundColor: 'black', borderColor: 'green', margin: 5, height: 50} ]} >
                   <Text
                     style={[styles.actions]}>
                     SCORE: {this.state.correctAnswers}/{this.state.questions.length}

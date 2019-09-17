@@ -8,7 +8,7 @@ export default class OptionsModule extends React.Component {
         super(props)      
         this.clickHandler = this.clickHandler.bind(this);
     }
-
+   
     clickHandler(evt){
       //console.log('we are in parent',evt.currentTarget);
     }
@@ -17,8 +17,8 @@ export default class OptionsModule extends React.Component {
         return(
           <View style = {styles.options} onInput={this.clickHandler} pointerEvents= 'box-none'>
           {this.props.options ? this.props.options.map( (option, index) => {
-              
-            return <Option key={index} {...option} />
+            
+            return <Option key={index + Math.floor(Math.random() * Math.random()*1000)} {...option} />
           }) : null }
           </View>
         );
