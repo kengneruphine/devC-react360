@@ -19,6 +19,7 @@ export default class Index extends Component{
       <Router>
         <View>
           <Route exact path='/' component={Welcome}/>
+          <Route exact path='/watch/options' component={WatchOptions} />
           <Route exact path='/welcome' component={Welcome}/>
           <Route exact path='/game/options' component={GameOptions}/>
           <Route exact path='/game/play' component={Game}/>

@@ -95,7 +95,6 @@ export default class Game extends React.Component {
                 {
                   this.state.currentQuestion
                 }
-               <TextModel Model={{obj: asset('obj/Residential Buildings 003.obj'), mtl: asset('obj/Residential Buildings 003.mtl')}} Text="Here is a serious question." />
             </View>
             <View style={styles.options}>
               <OptionsModule options={this.state.currentQuestionOptions} />
