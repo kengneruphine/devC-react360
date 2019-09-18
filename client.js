@@ -35,6 +35,17 @@ class SurfaceManagement extends Module{
     )
     SurfaceManagement.surfaces[name] = surface
   }
+  attachLocation(name, params){
+    if(!name || !params)
+        return
+    const Card = card(params)
+    const surface = SurfaceManagement.r360.renderToLocation(
+      SurfaceManagement.r360.createRoot(name, {}),
+      Card,
+      name
+    )
+    SurfaceManagement.surfaces[name] = surface
+  }
   detachAll(){
     for(let surface in SurfaceManagement.surfaces){
       SurfaceManagement.r360.detachRoot(SurfaceManagement.surfaces[surface])

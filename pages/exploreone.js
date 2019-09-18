@@ -23,7 +23,7 @@ export default class ExploreOne extends React.Component {
         SurfaceManagement.props = props
         SurfaceManagement.attachSurface('TopPosts',[-0.6, 0] );
         SurfaceManagement.attachSurface('CurrentPost', [0.6, 0] );
-        SurfaceManagement.attachSurface('ModelView', [0, 0] );
+        SurfaceManagement.attachSurface('ModelView', [0, 0, 0]);
       }
 
     render() {
