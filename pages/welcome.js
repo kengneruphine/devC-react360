@@ -14,18 +14,18 @@ import {
 // play environental Video
 const { VideoModule, AudioModule, SurfaceManagement} = NativeModules;
 console.log(SurfaceManagement.surfaces);
-AudioModule.playEnvironmental({
+/* AudioModule.playEnvironmental({
   source: ('John Legend -All of Me (lyrics).mp3'),
   volume: 0.7, // play at 3/10 original volume
-});
+}); */
 
-VideoModule.createPlayer('myplayer');
+/* VideoModule.createPlayer('myplayer');
 
 VideoModule.play('myplayer', {
   source: { url: '/things/long.mp4' },
   loop: false,
 });
-Environment.setBackgroundVideo('myplayer');
+Environment.setBackgroundVideo('myplayer'); */
  // detach other surfaces
 export default class Welcome extends React.Component {
   constructor(props){

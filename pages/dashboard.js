@@ -16,7 +16,7 @@ import {
 // Play environmental audio:
 const { AudioModule, VideoModule, SurfaceManagement } = NativeModules;
 
-AudioModule.playEnvironmental({
+/* AudioModule.playEnvironmental({
   source: ('John Legend -All of Me (lyrics).mp3'),
   volume: 0.7, // play at 3/10 original volume
 });
@@ -27,7 +27,7 @@ VideoModule.play('myplayer', {
   source: { url: '/things/long.mp4' },
   loop: false,
 });
-Environment.setBackgroundVideo('myplayer');
+Environment.setBackgroundVideo('myplayer'); */
 
 export default class Dashboard extends React.Component {
   constructor(props){
@@ -70,7 +70,7 @@ export class ExploreCard extends React.Component{
               justifyContent: 'center',
               alignItems: 'center',
             }} />
-            <ButtonLink link={'./explore'} text={'Explore'}/>
+            <ButtonLink link={'/explore'} text={'Explore'}/>
         </View>)
     }
 }
