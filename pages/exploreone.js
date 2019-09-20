@@ -21,9 +21,11 @@ export default class ExploreOne extends React.Component {
         //const rightPanel = new Surface(300, 600, Surface.SurfaceShape.Flat);
         //rightPanel.setAngle(0.6, 0);
         SurfaceManagement.props = props
-        SurfaceManagement.attachSurface('TopPosts',[-0.6, 0] );
-        SurfaceManagement.attachSurface('CurrentPost', [0.6, 0] );
-        SurfaceManagement.attachSurface('ModelView', [0, 0, 0]);
+        // SurfaceManagement.attachSurface('TopPosts',[-0.6, 0] );
+        SurfaceManagement.attachExploreSurface('TopPosts', Surface.SurfaceShape.Flat, [300, 600, -0.6, 0] );
+        // SurfaceManagement.attachSurface('CurrentPost', [0.6, 0] );
+        SurfaceManagement.attachExploreSurface('CurrentPost', Surface.SurfaceShape.Flat, [300, 600, 0.6, 0] );
+        SurfaceManagement.attachLocation('ModelView', [0, 0, 0]);
       }
 
     render() {

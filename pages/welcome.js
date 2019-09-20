@@ -36,8 +36,8 @@ export default class Welcome extends React.Component {
     return (
       <View style={styles.panel}>
 
-          <View>
-            <Image source={asset('wlc.webp')} style={{
+          <View style={styles.panel} >
+            <Image source={asset('wecomeimg.jpg')} style={{
               width: 1000,
               height: 300,
               justifyContent: 'center',
@@ -46,11 +46,14 @@ export default class Welcome extends React.Component {
             <Text style={{ fontSize: 40, fontWeight: 'bold' }}>
               We'll Walk you through a series of Question and answers
             </Text>
-          </View>
-          <VrButton onClick={() => {
+            <VrButton onClick={() => {
             this.props.history.push('./dashboard')
           }} 
-           style={{backgroundColor: 'red',
+           style={{
+            borderColor: '#639dda',
+            borderWidth: 5,
+            padding: 15,
+            margin: 3,
           }}>
             <Text
               style={{
@@ -64,6 +67,7 @@ export default class Welcome extends React.Component {
               Click to Advance to Game Page.....
           </Text>
           </VrButton>
+          </View>
       </View>
     );
   }
@@ -73,7 +77,7 @@ const styles = StyleSheet.create({
   panel: {
     width: 1000,
     height: 600,
-    backgroundColor: 'rgba(45, 274, 255, 0.4)',
+    backgroundColor: 'rgba(0, 0, 0, 0.4)',
     justifyContent: 'center',
     alignItems: 'center',
   },
