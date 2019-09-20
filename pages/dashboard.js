@@ -74,6 +74,7 @@ export class ExploreCard extends React.Component{
         </View>)
     }
 }
+
 export class ButtonLink extends React.Component{
   constructor(props){
     super(props)
@@ -99,7 +100,7 @@ export class VideoCard extends React.Component{
               justifyContent: 'center',
               alignItems: 'center',
             }} />
-            <ButtonLink link={'./video'} text={'Watch'}/>
+            <ButtonLink link={'./watch/options'} text={'Watch'}/>
         </View>)
     }
 }
@@ -113,6 +114,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+
   card: {
       height: 300,
       width: 500,

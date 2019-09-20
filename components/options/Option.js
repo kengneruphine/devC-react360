@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, VrButton, Text,StyleSheet,asset, NativeModules, AsyncStorage} from 'react-360';
+import {View, VrButton, Text,StyleSheet,asset, NativeModules} from 'react-360';
 const {AudioModule, TemporalStore} = NativeModules;
 
 export default class Option extends React.Component{

@@ -9,6 +9,10 @@ class TemporalStore extends Module {
     answerFound: false,
     currentQuiz: ''
   }
+  video = {
+    currentWatch: "", // selected disease
+    watchSelected: 0 // specific video selected
+  }
   constructor() {
       super('TemporalStore')
   }
@@ -24,10 +28,10 @@ class SurfaceManagement extends Module{
     if(name && SurfaceManagement.surfaces[name])
       SurfaceManagement.r360.detachRoot(SurfaceManagement.surfaces[name])
   }
-  attachSurface(name, params){
+  attachSurface(name, params, w, h){
     if(!name || !params)
         return
-    const Card = card(params)
+    const Card = card(params, w, h) 
     const surface = SurfaceManagement.r360.renderToSurface(
       SurfaceManagement.r360.createRoot(name, {}),
       Card,

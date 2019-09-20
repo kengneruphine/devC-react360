@@ -12,6 +12,10 @@ import {
   NativeModules,
 } from 'react-360';
 
+<<<<<<< HEAD
+=======
+import trying from './trying';
+>>>>>>> ea714d0cfda84917768595dc327047d9154b5349
 
 // Play environmental audio:
 const { AudioModule } = NativeModules;
@@ -116,3 +120,8 @@ const styles = StyleSheet.create({
 
 
 });
+<<<<<<< HEAD
+=======
+
+//AppRegistry.registerComponent('Hello360', () => Routes);
+>>>>>>> ea714d0cfda84917768595dc327047d9154b5349

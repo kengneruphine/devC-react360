@@ -8,11 +8,11 @@ import {
     VrButton
 } from 'react-360';
 import {NativeModules} from 'react-360';
-import Videos from '../components/videos/videos.json'
+import videos from '../components/videos/videos.json'
 const {TemporalStore, SurfaceManagement} = NativeModules;
-const Diseases = Object.keys(questions)
+const Diseases = Object.keys(videos)
 
-export default class GameOptions extends React.Component {
+export default class WatchOptions extends React.Component {
   constructor(props){
       super(props)
       SurfaceManagement.detachAll()
@@ -23,13 +23,14 @@ export default class GameOptions extends React.Component {
       <View style={styles.panel}>
           <View style={styles.listContainer}>
             <View style={styles.header}>
-              <Text>Watch educational videos for</Text>
+              <Text>Watch educational videos on</Text>
             </View>
           {
               Diseases.map( (disease, i) => (
               <View key={disease} style={styles.option}>
                     <VrButton style={styles.button} onClick={ () => { 
-                        TemporalStore.video.currentVideo = disease
+                        TemporalStore.video.currentWatch = disease
+                        console.log(TemporalStore.video.currentWatch)
                         this.props.history.push('/watch/see')
                     }}>
                         <Text>{disease[0].toUpperCase() +  disease.slice(1).toLowerCase()}</Text>
@@ -44,7 +45,7 @@ export default class GameOptions extends React.Component {
                               Back
                           </Text>
                       </VrButton>
-              </View>
+            </View>
           </View>
           
       </View>
