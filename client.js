@@ -1,5 +1,5 @@
 
-import {ReactInstance, Surface, Module} from 'react-360-web';
+import {ReactInstance, Surface, Location, Module} from 'react-360-web';
 import { card } from './utils'
 
 // instance used for wide application data transport
@@ -35,15 +35,24 @@ class SurfaceManagement extends Module{
     )
     SurfaceManagement.surfaces[name] = surface
   }
+  attachExploreSurface(name, type, params){
+    if(!name || !type || !params)
+        return
+    const panel = new Surface(params[0], params[1], type);
+    panel.setAngle(params[2], params[3]);
+    const surface = SurfaceManagement.r360.renderToSurface(
+      SurfaceManagement.r360.createRoot(name),
+        panel,
+    );
+    SurfaceManagement.surfaces[name] = surface
+  }
   attachLocation(name, params){
     if(!name || !params)
         return
-    const Card = card(params)
     const surface = SurfaceManagement.r360.renderToLocation(
-      SurfaceManagement.r360.createRoot(name, {}),
-      Card,
-      name
-    )
+      SurfaceManagement.r360.createRoot(name),
+      new Location([params[0], params[1], params[2]]),
+    );
     SurfaceManagement.surfaces[name] = surface
   }
   detachAll(){

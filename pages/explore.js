@@ -26,7 +26,7 @@ export default class Explore extends React.Component {
             </View>
           {
               Diseases.map( (disease, i) => (
-              <View key={disease} style={styles.option}>
+              <View key={disease} >
                     <VrButton style={styles.button} onClick={ () => { 
                         TemporalStore.quiz.currentQuiz = disease
                         this.props.history.push('/explore/one')
@@ -36,7 +36,7 @@ export default class Explore extends React.Component {
             </View>))
           }
             <View style={[styles.option, {backgroundColor: 'red', borderColor: 'red'}]}>
-                      <VrButton style={styles.button} onClick={ () => { 
+                      <VrButton onClick={ () => { 
                           this.props.history.goBack()
                       }}>
                           <Text style={{textAlign: 'center'}}>
@@ -58,13 +58,19 @@ const styles = StyleSheet.create({
     position: 'relative',
     width: 1000,
     height: 600,
-    backgroundColor: 'black',
+    backgroundColor: 'rgba(0, 0, 0, 0.8)'
   },
   listContainer:{
     position: 'relative',
     top: 50,
     left:350,
     width: 300
+  },
+  button: {
+    borderColor: '#639dda',
+    borderWidth: 5,
+    padding: 15,
+    margin: 3
   },
   option: {
     borderColor: 'white',
