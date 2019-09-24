@@ -49,8 +49,8 @@ export default class Welcome extends React.Component {
               justifyContent: 'center',
               alignItems: 'center',
             }} />
-            <Text style={{ fontSize: 40, fontWeight: 'bold' }}>
-              We'll Walk you through a series of Question and answers
+            <Text style={{ fontSize: 40, fontWeight: 'bold', textAlign: 'center' }}>
+              HealthPro educates on Africa's most deadly diseases through VR.
             </Text>
           </View>
           <VrButton onClick={() => {
@@ -67,7 +67,7 @@ export default class Welcome extends React.Component {
                 textAlign: 'center',
                 textAlignVertical: 'center',
               }}>
-              Click to Advance to Game Page.....
+              GET STARTED
           </Text>
           </VrButton>
 
