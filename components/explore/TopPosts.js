@@ -63,6 +63,13 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     alignItems: 'stretch',
   },
+  backButton: {
+    borderWidth: 1,
+    padding: 10,
+    margin: 1,
+    borderColor: 'white',
+    borderRadius: 5
+  },
   postButton: {
     height: 120,
     backgroundColor: '#000000',

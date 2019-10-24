@@ -28,7 +28,7 @@ export function initialize(apiKey) {
       name: 'mosquito',
       author: 'joel',
       description: 'This is a mosquito nothing more nothing less',
-      source: 'sphere/scene.gltf',
+      source: 'sphere/mosquito.glb',
       preview: 'mosquito.jpg',
     },
     {
