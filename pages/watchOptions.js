@@ -5,7 +5,9 @@ import {
     StyleSheet,
     Text,
     View,
-    VrButton
+    VrButton,
+    Image,
+    asset
 } from 'react-360';
 import {NativeModules} from 'react-360';
 import videos from '../components/videos/videos.json'
@@ -23,28 +25,28 @@ export default class WatchOptions extends React.Component {
       <View style={styles.panel}>
           <View style={styles.listContainer}>
             <View style={styles.header}>
-              <Text>Watch educational videos on</Text>
+              <Text style={{textAlign: 'center', padding: 2}}>Watch educational videos on</Text>
             </View>
           {
               Diseases.map( (disease, i) => (
               <View key={disease} style={styles.option}>
                     <VrButton style={styles.button} onClick={ () => { 
                         TemporalStore.video.currentWatch = disease
-                        console.log(TemporalStore.video.currentWatch)
                         this.props.history.push('/watch/see')
                     }}>
-                        <Text>{disease[0].toUpperCase() +  disease.slice(1).toLowerCase()}</Text>
+                        <Text>{videos[disease].title}</Text>
                     </VrButton>
             </View>))
           }
-            <View style={[styles.option, {backgroundColor: 'red', borderColor: 'red'}]}>
-                      <VrButton style={styles.button} onClick={ () => { 
-                          this.props.history.goBack()
-                      }}>
-                          <Text style={{textAlign: 'center'}}>
-                              Back
-                          </Text>
-                      </VrButton>
+            <View style={[styles.option, {backgroundColor: 'transparent', borderWidth: 0, position: 'relative'}]}>
+                      
+                      <VrButton  onClick={() => this.props.history.goBack()} style={{position: 'relative', left: 110}}>
+                      <Image style={{
+                              width: 40,
+                              height: 40,
+                          }}
+                              source={asset('img/nav_back.png')} />  
+                  </VrButton>
             </View>
           </View>
           
@@ -77,6 +79,7 @@ const styles = StyleSheet.create({
   },
   header:{
     margin: 20,
+    backgroundColor: '#3267FC'
   }
 
 });

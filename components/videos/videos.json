@@ -1,103 +1,118 @@
 {
-    "malaria": [
-        {
-            "id": "2661574c",
-            "label": "What is Malaria",
-            "link": "1. What is Malaria.mp4"
-        },
-        {
-            "id": "c33190401",
-            "label": "Distribution across the world",
-            "link": "2. Distribution across the world.mp4"
-        },
-        {
-            "id": "551398db",
-            "label": "Types of malaria infections",
-            "link": "3. Types of malaria infections.mp4"
-        },
-        {
-            "id": "e433e522",
-            "label": "Malaria and other diseases",
-            "link": "4. Malaria and other diseases.mp4"
-        },
-        {
-            "id": "00b34176",
-            "label": "Transmission of malaria by mosquito vector",
-            "link": "5. Transmission of malaria by mosquito vector.mp4"
-        },
-        {
-            "id": "b87073e3",
-            "label": "Exoerythrocytic phase",
-            "link": "6. Exoerythrocytic phase.mp4"
-        },
-        {
-            "id": "a7f270dd",
-            "label": "Erythrocytic phase.mp4",
-            "link": "7. Erythrocytic phase.mp4"
-        },
-        {
-            "id": "3f0a0245",
-            "label": "Gametogony",
-            "link": "8. Gametogony.mp4"
-        },
-        {
-            "id": "85bdd5d6",
-            "label": "Sporogony.mp4",
-            "link": "9. Sporogony.mp4"
-        },
-        {
-            "id": "aa1e7086",
-            "label": "Incubation time",
-            "link": "10. Incubation time.mp4"
-        },
-        {
-            "id": "55a0c50a",
-            "label": "Fevers.mp4",
-            "link": "11. Fevers.mp4"
-        },
-        {
-            "id": "0fc5d4cc",
-            "label": "Hemolytic anemia.mp4",
-            "link": "12. Hemolytic anemia.mp4"
-        },
-        {
-            "id": "e28fd623",
-            "label": "Blocked blood flow.mp4",
-            "link": "13. Blocked blood flow.mp4"
-        },
-        {
-            "id": "68940f19",
-            "label": "Organ failure",
-            "link": "14. Organ failure.mp4"
-        },
-        {
-            "id": "633adaf1",
-            "label": "Diagnosis of malaria.mp4",
-            "link": "15. Diagnosis of malaria.mp4"
-        },
-        {
-            "id": "4d2059d2",
-            "label": "Treatment of malaria.mp4",
-            "link": "16. Treatment of malaria.mp4"
-        },
-        {
-            "id": "0a1303e4",
-            "label": "Recurrent malaria",
-            "link": "17. Recurrent malaria.mp4"
-        },
-        {
-            "id": "57603084",
-            "label": "Prevention of malaria",
-            "link": "18. Prevention of malaria.mp4"
-        },
-        {
-            "id": "693c5517",
-            "label": "Quick recap",
-            "link": "19. Quick recap.mp4"
-        }
-    ],
-    "tuberclosis": [],
-    "typhoid": [],
-    "cancer": [],
-    "hypertities": []
+    "malaria": {
+        "title": "Malaria",
+        "description": "This is a description of malaria",
+        "videos": [
+            {
+                "id": "2661574c",
+                "label": "What is Malaria",
+                "link": "1. What is Malaria.mp4"
+            },
+            {
+                "id": "c33190401",
+                "label": "Distribution across the world",
+                "link": "2. Distribution across the world.mp4"
+            },
+            {
+                "id": "551398db",
+                "label": "Types of malaria infections",
+                "link": "3. Types of malaria infections.mp4"
+            },
+            {
+                "id": "e433e522",
+                "label": "Malaria and other diseases",
+                "link": "4. Malaria and other diseases.mp4"
+            },
+            {
+                "id": "00b34176",
+                "label": "Transmission of malaria by mosquito vector",
+                "link": "5. Transmission of malaria by mosquito vector.mp4"
+            },
+            {
+                "id": "b87073e3",
+                "label": "Exoerythrocytic phase",
+                "link": "6. Exoerythrocytic phase.mp4"
+            },
+            {
+                "id": "a7f270dd",
+                "label": "Erythrocytic phase.mp4",
+                "link": "7. Erythrocytic phase.mp4"
+            },
+            {
+                "id": "3f0a0245",
+                "label": "Gametogony",
+                "link": "8. Gametogony.mp4"
+            },
+            {
+                "id": "85bdd5d6",
+                "label": "Sporogony.mp4",
+                "link": "9. Sporogony.mp4"
+            },
+            {
+                "id": "aa1e7086",
+                "label": "Incubation time",
+                "link": "10. Incubation time.mp4"
+            },
+            {
+                "id": "55a0c50a",
+                "label": "Fevers.mp4",
+                "link": "11. Fevers.mp4"
+            },
+            {
+                "id": "0fc5d4cc",
+                "label": "Hemolytic anemia.mp4",
+                "link": "12. Hemolytic anemia.mp4"
+            },
+            {
+                "id": "e28fd623",
+                "label": "Blocked blood flow.mp4",
+                "link": "13. Blocked blood flow.mp4"
+            },
+            {
+                "id": "68940f19",
+                "label": "Organ failure",
+                "link": "14. Organ failure.mp4"
+            },
+            {
+                "id": "633adaf1",
+                "label": "Diagnosis of malaria.mp4",
+                "link": "15. Diagnosis of malaria.mp4"
+            },
+            {
+                "id": "4d2059d2",
+                "label": "Treatment of malaria.mp4",
+                "link": "16. Treatment of malaria.mp4"
+            },
+            {
+                "id": "0a1303e4",
+                "label": "Recurrent malaria",
+                "link": "17. Recurrent malaria.mp4"
+            },
+            {
+                "id": "57603084",
+                "label": "Prevention of malaria",
+                "link": "18. Prevention of malaria.mp4"
+            },
+            {
+                "id": "693c5517",
+                "label": "Quick recap",
+                "link": "19. Quick recap.mp4"
+            }
+        ]
+    },
+    "hiv_aids": {
+        "title": "HIV/AIDS",
+        "description": "AIDS",
+        "videos": []
+    },
+    "breast_cancer": {
+        "title": "Breast Cancer",
+        "description": "breast cancer",
+        "videos": []
+    },
+    "hepatitis": {
+        "title": "Hepatitis",
+        "description": "hepatitis",
+        "videos": []
+    }   
 }

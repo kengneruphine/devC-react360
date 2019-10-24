@@ -25,7 +25,7 @@ export default class Option extends React.Component{
         // // which cursor the user was using, and which React tag was targeted
         // const inputEvent = event.inputEvent;
         // console.log(event)
-       console.log('we are in child');
+      
        let newColor= this.state.btnStyle.backgroundColor === "red" ? "blue" : "red"
        this.setState({
             btnStyle: {
