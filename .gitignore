@@ -4,3 +4,6 @@
 *.js.meta
 node_modules/
 build/
+.vscode
+package-lock.json
+yarn.lock

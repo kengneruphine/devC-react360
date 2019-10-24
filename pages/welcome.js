@@ -11,52 +11,49 @@ import {
   staticResourceURL,
   NativeModules,
 } from 'react-360';
-
-<<<<<<< HEAD
-=======
-import trying from './trying';
->>>>>>> ea714d0cfda84917768595dc327047d9154b5349
-
-// Play environmental audio:
-const { AudioModule } = NativeModules;
-
-AudioModule.playEnvironmental({
-  source: ('John Legend -All of Me (lyrics).mp3'),
-  volume: 0.5, // play at 3/10 original volume
-});
-
 // play environental Video
-const { VideoModule } = NativeModules;
+const { VideoModule, AudioModule, SurfaceManagement} = NativeModules;
+console.log(SurfaceManagement.surfaces);
+/* AudioModule.playEnvironmental({
+  source: ('John Legend -All of Me (lyrics).mp3'),
+  volume: 0.7, // play at 3/10 original volume
+}); */
 
-VideoModule.createPlayer('myplayer');
+/* VideoModule.createPlayer('myplayer');
 
 VideoModule.play('myplayer', {
   source: { url: '/things/long.mp4' },
   loop: false,
 });
-
-Environment.setBackgroundVideo('myplayer');
-
+Environment.setBackgroundVideo('myplayer'); */
+ // detach other surfaces
 export default class Welcome extends React.Component {
+  constructor(props){
+    super(props)
+    SurfaceManagement.detachAll()
+  }
   render() {
     return (
       <View style={styles.panel}>
-        
-          <View>
-            <Image source={asset('wlc.webp')} style={{
+
+          <View style={styles.panel} >
+            <Image source={asset('wecomeimg.jpg')} style={{
               width: 1000,
               height: 300,
               justifyContent: 'center',
               alignItems: 'center',
             }} />
-            <Text style={{ fontSize: 40, fontWeight: 'bold', textAlign: 'center' }}>
-              HealthPro educates on Africa's most deadly diseases through VR.
+            <Text style={{ fontSize: 40, fontWeight: 'bold' }}>
+               HealthPro educating you on Africa's most deadly diseases through VR.
             </Text>
-          </View>
-          <VrButton onClick={() => {
-            this.props.history.push('./index')
+            <VrButton onClick={() => {
+            this.props.history.push('./dashboard')
           }} 
-           style={{backgroundColor: 'red',
+           style={{
+            borderColor: '#639dda',
+            borderWidth: 5,
+            padding: 15,
+            margin: 3,
           }}>
             <Text
               style={{
@@ -70,7 +67,7 @@ export default class Welcome extends React.Component {
               GET STARTED
           </Text>
           </VrButton>
-
+          </View>
       </View>
     );
   }
@@ -78,10 +75,9 @@ export default class Welcome extends React.Component {
 
 const styles = StyleSheet.create({
   panel: {
-    // Fill the entire surface
     width: 1000,
     height: 600,
-    backgroundColor: 'rgba(45, 274, 255, 0.4)',
+    backgroundColor: 'rgba(0, 0, 0, 0.4)',
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -109,19 +105,11 @@ const styles = StyleSheet.create({
     borderColor: '#639dda',
     borderWidth: 2,
     margin: 2,
-
   },
-
   container: {
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-between'
-  },
-
-
+  }
 });
-<<<<<<< HEAD
-=======
 
-//AppRegistry.registerComponent('Hello360', () => Routes);
->>>>>>> ea714d0cfda84917768595dc327047d9154b5349
