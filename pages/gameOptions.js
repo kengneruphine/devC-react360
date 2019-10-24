@@ -5,7 +5,9 @@ import {
     StyleSheet,
     Text,
     View,
-    VrButton
+    Image,
+    VrButton,
+    asset
 } from 'react-360';
 import {NativeModules} from 'react-360';
 import questions from '../components/questions/questions.json'
@@ -29,7 +31,7 @@ export default class GameOptions extends React.Component {
       <View style={styles.panel}>
           <View style={styles.listContainer}>
             <View style={styles.header}>
-              <Text>Select your game</Text>
+              <Text style={{textAlign: 'center', padding: 2}}>Select your game</Text>
             </View>
           {
               Diseases.map( (disease, i) => (
@@ -38,18 +40,19 @@ export default class GameOptions extends React.Component {
                         TemporalStore.quiz.currentQuiz = disease
                         this.props.history.push('/game/play')
                     }}>
-                        <Text>{disease[0].toUpperCase() +  disease.slice(1).toLowerCase()}</Text>
+                        <Text>{questions[disease].title}</Text>
                     </VrButton>
             </View>))
           }
-            <View style={[styles.option, {backgroundColor: 'red', borderColor: 'red'}]}>
-                      <VrButton style={styles.button} onClick={ () => { 
-                          this.props.history.goBack()
-                      }}>
-                          <Text style={{textAlign: 'center'}}>
-                              Back
-                          </Text>
-                      </VrButton>
+            <View style={[styles.option, {backgroundColor: 'transparent', borderWidth: 0, position: 'relative'}]}>
+                      
+                      <VrButton  onClick={() => this.props.history.goBack()} style={{position: 'relative', left: 110}}>
+                      <Image style={{
+                              width: 40,
+                              height: 40,
+                          }}
+                              source={asset('img/nav_back.png')} />  
+                  </VrButton>
               </View>
           </View>
           
@@ -82,6 +85,7 @@ const styles = StyleSheet.create({
   },
   header:{
     margin: 20,
+    backgroundColor: '#3267FC'
   }
 
 });

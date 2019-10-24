@@ -8,7 +8,6 @@ export default class OptionsModule extends React.Component {
         super(props)      
         this.clickHandler = this.clickHandler.bind(this);
     }
-   
     clickHandler(evt){
       //console.log('we are in parent',evt.currentTarget);
     }

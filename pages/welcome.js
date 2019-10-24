@@ -43,7 +43,7 @@ export default class Welcome extends React.Component {
               justifyContent: 'center',
               alignItems: 'center',
             }} />
-            <Text style={{ fontSize: 40, fontWeight: 'bold' }}>
+            <Text style={{ fontSize: 40, fontWeight: 'bold', textAlign: 'center' }}>
                HealthPro educating you on Africa's most deadly diseases through VR.
             </Text>
             <VrButton onClick={() => {
