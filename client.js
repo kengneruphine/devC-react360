@@ -36,12 +36,11 @@ function init(bundle, parent, options = {}) {
   let indexSurface = new Surface(
     1000,
     600,
-    Surface.SurfaceShape.Flat /* shape */
-  
-  r360.renderToSurface(
-    r360.createRoot('Index', {  }),
-    r360.getDefaultSurface()
-  );
+    Surface.SurfaceShape.Flat, /* shape */
+    r360.renderToSurface(
+      r360.createRoot('Index', {  }),
+      r360.getDefaultSurface()
+    ));
   // Load the initial environment
   r360.compositor.setBackground(r360.getAssetURL('360_world.jpg'));
 

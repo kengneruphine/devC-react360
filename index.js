@@ -41,19 +41,19 @@ AppRegistry.registerComponent('Index', () => Index);
 const options = [{ text: 'Tabitha', id: 'tabitha' }, { text: 'Grace', id: 'grace' },
 { text: 'Admin', id: 'admin' }, { text: 'Test', id: 'test' }];
 
-export default class Hello360 extends React.Component {
+/*export default class Hello360 extends React.Component {
   state = {
     count: 0,
   };
 
   render() {
     return (
-      /*<View>
+      <View>
         <D3Model />
         <Sphere />
         <Label1 />
         <Label2 />
-        <Label3 />*/
+        <Label3 />
 
       <View style={styles.panel}>
         <View style={styles.greetingBox}>
@@ -171,3 +171,4 @@ const styles = StyleSheet.create({
 });
 
 AppRegistry.registerComponent('Hello360', () => Routes);
+*/
