@@ -1,8 +1,6 @@
 import React from 'react';
 import {
   AppRegistry,
-  StyleSheet,
-  Text,
   View,
   VrButton,
   Image,
@@ -19,9 +17,14 @@ import trying from './components/trying';
 //import OptionsModule from './components/OptionsModule';
 import OptionsModule from './components/options/OptionsModule';
 import welcome from './components/welcome';
+import Devc from './component/Devc';
+import Lable from './component/Lable';
+// import OptionsModule from './components/OptionsModule';
 
 const options = [{ text: 'Tabitha', id: 'tabitha' }, { text: 'Grace', id: 'grace' },
 { text: 'Admin', id: 'admin' }, { text: 'Test', id: 'test' }];
+
+
 
 export default class Hello360 extends React.Component {
   state = {
