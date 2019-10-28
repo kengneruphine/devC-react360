@@ -1338,7 +1338,234 @@
         "description": "breast cancer",
         "questions": [
             {
-
+                "id":"brc19bc00",
+                "type":"simple",
+                "text":"Which are the four most common cancers in the UK",
+                "options": [
+                    {
+                        "text":"A. Pancreas, bladder, brain, lung",
+                        "ans":false
+                    },
+                    {
+                        "text":"B.  Stomach, breast, kidney, melanoma",
+                        "ans":false
+                    },
+                    {
+                        "text":"C. Breast, lung, prostate, colorectum",
+                        "ans":true
+                    },
+                    {
+                        "text":"D.Endometrium, brain, oesophagus, non-Hodgkin lymphoma",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc01",
+                "type":"simple",
+                "text":"Which is the most reliable type of observational study for investigating the link between diet and cancer?",
+                "options": [
+                    {
+                        "text":"A. Randomised controlled trial",
+                        "ans":false
+                    },
+                    {
+                        "text":"B. Prospective study",
+                        "ans":true
+                    },
+                    {
+                        "text":"C. Ecological study",
+                        "ans":false
+                    },
+                    {
+                        "text":"D. Case-control study",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc02",
+                "type":"simple",
+                "text":"Which of these factors increases the risk for cancer of the oesophagus?",
+                "options": [
+                    {
+                        "text":"A. Processed meat",
+                        "ans":false
+                    },
+                    {
+                        "text":"B. Fruit and vegetables",
+                        "ans":false
+                    },
+                    {
+                        "text":"C. Salt",
+                        "ans":false
+                    },
+                    {
+                        "text":"D. Alcohol",
+                        "ans":true
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc03",
+                "type":"simple",
+                "text":"Which of these factors increases the risk for cancer of the stomach?",
+                "options": [
+                    {
+                        "text":"A. Obesity",
+                        "ans":false
+                    },
+                    {
+                        "text":"B. Sugar",
+                        "ans":false
+                    },
+                    {
+                        "text":"C.  Salt and salt-preserved foods",
+                        "ans":true
+                    },
+                    {
+                        "text":"D. Dietary fibre",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc04",
+                "type":"simple",
+                "text":"Which of these factors reduces the risk for cancer of the colorectum?",
+                "options": [
+                    {
+                        "text":"A.Vitamin C",
+                        "ans":false
+                    },
+                    {
+                        "text":"B.Dietary fibre",
+                        "ans":true
+                    },
+                    {
+                        "text":"C. Alcohol",
+                        "ans":false
+                    },
+                    {
+                        "text":"D. Oestrogen",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc05",
+                "type":"simple",
+                "text":"Which of these factors increases the risk for postmenopausal breast cancer?",
+                "options": [
+                    {
+                        "text":"A.Red meat",
+                        "ans":false
+                    },
+                    {
+                        "text":"B.Dietary fat",
+                        "ans":false
+                    },
+                    {
+                        "text":"C. Fish",
+                        "ans":false
+                    },
+                    {
+                        "text":"D.Obesity",
+                        "ans":true
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc06",
+                "type":"simple",
+                "text":"Which of these factors is associated with an increase in the risk for prostate cancer?",
+                "options": [
+                    {
+                        "text":"A. Insulin-like growth factor-1",
+                        "ans":true
+                    },
+                    {
+                        "text":"B. Dietary fat",
+                        "ans":false
+                    },
+                    {
+                        "text":"C.Alcohol",
+                        "ans":false
+                    },
+                    {
+                        "text":"D.Salt",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc07",
+                "type":"simple",
+                "text":"Which of these factors increases the risk for lung cancer?",
+                "options": [
+                    {
+                        "text":"A.Saturated fat",
+                        "ans":false
+                    },
+                    {
+                        "text":"B.Obesity",
+                        "ans":false
+                    },
+                    {
+                        "text":"C.High dose ß-carotene supplements",
+                        "ans":true
+                    },
+                    {
+                        "text":"D.Alcohol",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc08",
+                "type":"simple",
+                "text":"Approximately what proportion of cancers in the UK is caused by dietary factors, including obesity and alcohol?",
+                "options": [
+                    {
+                        "text":"A.10%",
+                        "ans":false
+                    },
+                    {
+                        "text":"B.20%",
+                        "ans":false
+                    },
+                    {
+                        "text":"C.30%",
+                        "ans":true
+                    },
+                    {
+                        "text":"D.40%",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc09",
+                "type":"simple",
+                "text":"Obesity increases the risk of endometrial cancer. Which hormone is thought to mediate this effect?",
+                "options": [
+                    {
+                        "text":"A.Testosterone",
+                        "ans":false
+                    },
+                    {
+                        "text":"B.Oestrogen",
+                        "ans":true
+                    },
+                    {
+                        "text":"C.Insulin-like growth factor-1",
+                        "ans":false
+                    },
+                    {
+                        "text":"D.Thyroxine",
+                        "ans":false
+                    }
+                ]
             }
         ]
     },
