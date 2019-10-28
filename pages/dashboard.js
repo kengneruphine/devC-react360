@@ -106,6 +106,7 @@ export class VideoCard extends React.Component{
 }
 
 
+
 const styles = StyleSheet.create({
   panel: {
     width: 1000,
@@ -118,9 +119,10 @@ const styles = StyleSheet.create({
   card: {
       height: 300,
       width: 500,
-      borderColor: "white",
-      borderWidth: 0.2,
-      position: 'relative'
+      borderColor: "#3267FC",
+      borderWidth: 1,
+      position: 'relative',
+      borderRadius: 10,
   },
   cardLabel:{
     position: 'absolute',
