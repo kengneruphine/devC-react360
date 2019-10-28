@@ -96,6 +96,283 @@
                     }
                 ]
     
+            },
+            {
+                "id": "cb19dks2",
+                "type": "simple",
+                "text": "How can you contract Malaria?",
+                "options": [
+                    {
+                        "text": "Coughing on someone",
+                        "ans": false
+                    },
+                    {
+                        "text": "Physical Contact",
+                        "ans": false
+                    },
+                    {
+                        "text": "An infected mosquito biting you",
+                        "ans": true
+                    },
+                    {
+                        "text": "Drinking infected water",
+                        "ans": false
+                    }
+                ]
+    
+            },
+             {
+                "id": "cb19df6a3",
+                "type": "simple",
+                "text": "What organ in your body does Malaria effect the most?",
+                "options": [
+                    {
+                        "text": "Heart",
+                        "ans": false
+                    },
+                    {
+                        "text": "Brain",
+                        "ans": false
+                    },
+                    {
+                        "text": "Small Intestine",
+                        "ans": false
+                    },
+                    {
+                        "text": "Liver",
+                        "ans": true
+                    }
+                ]
+    
+            },
+             {
+                "id": "b19da5f6a3",
+                "type": "simple",
+                "text": "Malaria is mainly found in:",
+                "options": [
+                    {
+                        "text": "Africa",
+                        "ans": true
+                    },
+                    {
+                        "text": "Canada",
+                        "ans": false
+                    },
+                    {
+                        "text": "Alaska",
+                        "ans": false
+                    },
+                    {
+                        "text": "Australia",
+                        "ans": false
+                    }
+                ]
+    
+            },
+             {
+                "id": "da5ff6a3",
+                "type": "simple",
+                "text": "Fever is a Symtom of Malaria.",
+                "options": [
+                    {
+                        "text": "True",
+                        "ans": true
+                    },
+                    {
+                        "text": "False",
+                        "ans": false
+                    }
+                ]
+            },
+            {
+                "id": "sa5d1b6a3",
+                "type": "simple",
+                "text": "Blurry Visionis a Symtom of Malaria",
+                "options": [
+                    {
+                        "text": "True",
+                        "ans": false
+                    },
+                    {
+                        "text": "False",
+                        "ans": true
+                    }
+                ]
+            },
+            {
+                "id": "s1da5db6a4",
+                "type": "simple",
+                "text": "Sweating is a Symtom of Malaria",
+                "options": [
+                    {
+                        "text": "True",
+                        "ans": true
+                    },
+                    {
+                        "text": "False",
+                        "ans": false
+                    }
+                ]
+            },
+            {
+                "id": "s4d2b6a3",
+                "type": "simple",
+                "text": "Fatigue is a Symtom of Malaria",
+                "options": [
+                    {
+                        "text": "True",
+                        "ans": true
+                    },
+                    {
+                        "text": "False",
+                        "ans": false
+                    }
+                ]
+            },
+            {
+                "id": "a5db6a3",
+                "type": "simple",
+                "text": "Enlarged Spleen is a Symtom of Malaria.",
+                "options": [
+                    {
+                        "text": "True",
+                        "ans": false
+                    },
+                    {
+                        "text": "False",
+                        "ans": true
+                    }
+                ]
+            },
+            {
+                "id": "4a5db6a3",
+                "type": "simple",
+                "text": "Where is Malaria most common within Africa?",
+                "options": [
+                    {
+                        "text": "Southern Africa",
+                        "ans": true
+                    },
+                    {
+                        "text": "Central Africa",
+                        "ans": false
+                    },
+                    {
+                        "text": "Western Africa",
+                        "ans": false
+                    },
+                    {
+                        "text": "Northern Africa",
+                        "ans": false
+                    }
+                ]
+            },
+            {
+                "id": "45fgdb6a3",
+                "type": "simple",
+                "text": "Mosquito responsible for malaria transmission",
+                "options": [
+                    {
+                        "text": "Aedes aegypti",
+                        "ans": false
+                    },
+                    {
+                        "text": "Anopheles",
+                        "ans": true
+                    },
+                    {
+                        "text": "Aedes albopictus",
+                        "ans": false
+                    },
+                    {
+                        "text": "Haemagogus",
+                        "ans": false
+                    }
+                ]
+            },
+            {
+                "id": "3a5db6a3",
+                "type": "simple",
+                "text": "How many people are at risk of malaria in the world?",
+                "options": [
+                    {
+                        "text": "1.2 million people",
+                        "ans": false
+                    },
+                    {
+                        "text": "1.2 billion peoplea",
+                        "ans": false
+                    },
+                    {
+                        "text": "3.2 billion people",
+                        "ans": true
+                    }
+                ]
+            },
+            {
+                "id": "6dc5db6a3",
+                "type": "simple",
+                "text": "Malaria can be lethal",
+                "options": [
+                    {
+                        "text": "True",
+                        "ans": true
+                    },
+                    {
+                        "text": "False",
+                        "ans": false
+                    }
+                ]
+            },
+            {
+                "id": "4da5db6a3",
+                "type": "simple",
+                "text": "I can protect myself from malaria",
+                "options": [
+                    {
+                        "text": "Using mosquito repellent",
+                        "ans": true
+                    },
+                    {
+                        "text": "Wearing light-coloured, long-sleeved shirts and trousers",
+                        "ans": false
+                    },
+                    {
+                        "text": "Sleeping under insecticide-treated bed nets",
+                        "ans": true
+                    }
+                    
+                ]
+            },
+            {
+                "id": "564a5db6a3",
+                "type": "simple",
+                "text": "There is no treatment against malaria",
+                "options": [
+                    {
+                        "text": "True",
+                        "ans": false
+                    },
+                    {
+                        "text": "False",
+                        "ans": true
+                    }
+                ]
+            },
+            {
+                "id": "46ba5db6a3",
+                "type": "simple",
+                "text": "There is a vaccine against malaria",
+                "options": [
+                    {
+                        "text": "True",
+                        "ans": false
+                    },
+                    {
+                        "text": "False",
+                        "ans": true
+                    }
+                ]
             }
         ]
     },
@@ -1061,7 +1338,7 @@
         "description": "breast cancer",
         "questions": [
             {
-                
+
             }
         ]
     },
@@ -1071,3 +1348,4 @@
         "questions": []
     }   
 }
+
