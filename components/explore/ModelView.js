@@ -35,7 +35,7 @@ class ModelView extends React.Component {
           style={{transform: [{translate: [0, 4, -1]}]}}
         />
         <AnimatedEntity
-          style={{transform: [{rotateY: this.rotation}]}}
+          style={{transform: [ {translate: [0, 0, -30]}]}}
           source={{gltf2: asset(source)}}
         />
       </View>

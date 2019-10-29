@@ -74,7 +74,7 @@
                 ]
             },
             {
-                "id": "cb19da5ff6a3",
+            "id": "cb19da5ff6a3",
                 "type": "simple",
                 "text": "Mosquitoes is/are the vector in the following disorder(s)",
                 "options": [
@@ -96,18 +96,1478 @@
                     }
                 ]
     
+            },
+            {
+                "id": "cb19dks2",
+                "type": "simple",
+                "text": "How can you contract Malaria?",
+                "options": [
+                    {
+                        "text": "Coughing on someone",
+                        "ans": false
+                    },
+                    {
+                        "text": "Physical Contact",
+                        "ans": false
+                    },
+                    {
+                        "text": "An infected mosquito biting you",
+                        "ans": true
+                    },
+                    {
+                        "text": "Drinking infected water",
+                        "ans": false
+                    }
+                ]
+    
+            },
+             {
+                "id": "cb19df6a3",
+                "type": "simple",
+                "text": "What organ in your body does Malaria effect the most?",
+                "options": [
+                    {
+                        "text": "Heart",
+                        "ans": false
+                    },
+                    {
+                        "text": "Brain",
+                        "ans": false
+                    },
+                    {
+                        "text": "Small Intestine",
+                        "ans": false
+                    },
+                    {
+                        "text": "Liver",
+                        "ans": true
+                    }
+                ]
+    
+            },
+             {
+                "id": "b19da5f6a3",
+                "type": "simple",
+                "text": "Malaria is mainly found in:",
+                "options": [
+                    {
+                        "text": "Africa",
+                        "ans": true
+                    },
+                    {
+                        "text": "Canada",
+                        "ans": false
+                    },
+                    {
+                        "text": "Alaska",
+                        "ans": false
+                    },
+                    {
+                        "text": "Australia",
+                        "ans": false
+                    }
+                ]
+    
+            },
+             {
+                "id": "da5ff6a3",
+                "type": "simple",
+                "text": "Fever is a Symtom of Malaria.",
+                "options": [
+                    {
+                        "text": "True",
+                        "ans": true
+                    },
+                    {
+                        "text": "False",
+                        "ans": false
+                    }
+                ]
+            },
+            {
+                "id": "sa5d1b6a3",
+                "type": "simple",
+                "text": "Blurry Visionis a Symtom of Malaria",
+                "options": [
+                    {
+                        "text": "True",
+                        "ans": false
+                    },
+                    {
+                        "text": "False",
+                        "ans": true
+                    }
+                ]
+            },
+            {
+                "id": "s1da5db6a4",
+                "type": "simple",
+                "text": "Sweating is a Symtom of Malaria",
+                "options": [
+                    {
+                        "text": "True",
+                        "ans": true
+                    },
+                    {
+                        "text": "False",
+                        "ans": false
+                    }
+                ]
+            },
+            {
+                "id": "s4d2b6a3",
+                "type": "simple",
+                "text": "Fatigue is a Symtom of Malaria",
+                "options": [
+                    {
+                        "text": "True",
+                        "ans": true
+                    },
+                    {
+                        "text": "False",
+                        "ans": false
+                    }
+                ]
+            },
+            {
+                "id": "a5db6a3",
+                "type": "simple",
+                "text": "Enlarged Spleen is a Symtom of Malaria.",
+                "options": [
+                    {
+                        "text": "True",
+                        "ans": false
+                    },
+                    {
+                        "text": "False",
+                        "ans": true
+                    }
+                ]
+            },
+            {
+                "id": "4a5db6a3",
+                "type": "simple",
+                "text": "Where is Malaria most common within Africa?",
+                "options": [
+                    {
+                        "text": "Southern Africa",
+                        "ans": true
+                    },
+                    {
+                        "text": "Central Africa",
+                        "ans": false
+                    },
+                    {
+                        "text": "Western Africa",
+                        "ans": false
+                    },
+                    {
+                        "text": "Northern Africa",
+                        "ans": false
+                    }
+                ]
+            },
+            {
+                "id": "45fgdb6a3",
+                "type": "simple",
+                "text": "Mosquito responsible for malaria transmission",
+                "options": [
+                    {
+                        "text": "Aedes aegypti",
+                        "ans": false
+                    },
+                    {
+                        "text": "Anopheles",
+                        "ans": true
+                    },
+                    {
+                        "text": "Aedes albopictus",
+                        "ans": false
+                    },
+                    {
+                        "text": "Haemagogus",
+                        "ans": false
+                    }
+                ]
+            },
+            {
+                "id": "3a5db6a3",
+                "type": "simple",
+                "text": "How many people are at risk of malaria in the world?",
+                "options": [
+                    {
+                        "text": "1.2 million people",
+                        "ans": false
+                    },
+                    {
+                        "text": "1.2 billion peoplea",
+                        "ans": false
+                    },
+                    {
+                        "text": "3.2 billion people",
+                        "ans": true
+                    }
+                ]
+            },
+            {
+                "id": "6dc5db6a3",
+                "type": "simple",
+                "text": "Malaria can be lethal",
+                "options": [
+                    {
+                        "text": "True",
+                        "ans": true
+                    },
+                    {
+                        "text": "False",
+                        "ans": false
+                    }
+                ]
+            },
+            {
+                "id": "4da5db6a3",
+                "type": "simple",
+                "text": "I can protect myself from malaria",
+                "options": [
+                    {
+                        "text": "Using mosquito repellent",
+                        "ans": true
+                    },
+                    {
+                        "text": "Wearing light-coloured, long-sleeved shirts and trousers",
+                        "ans": false
+                    },
+                    {
+                        "text": "Sleeping under insecticide-treated bed nets",
+                        "ans": true
+                    }
+                    
+                ]
+            },
+            {
+                "id": "564a5db6a3",
+                "type": "simple",
+                "text": "There is no treatment against malaria",
+                "options": [
+                    {
+                        "text": "True",
+                        "ans": false
+                    },
+                    {
+                        "text": "False",
+                        "ans": true
+                    }
+                ]
+            },
+            {
+                "id": "46ba5db6a3",
+                "type": "simple",
+                "text": "There is a vaccine against malaria",
+                "options": [
+                    {
+                        "text": "True",
+                        "ans": false
+                    },
+                    {
+                        "text": "False",
+                        "ans": true
+                    }
+                ]
             }
         ]
     },
-    "hiv_aids": {
-        "title": "HIV/AIDS",
-        "description": "AIDS",
-        "questions": []
+
+        "hiv_aids": {
+            "title": "HIV/AIDS",
+            "description": "AIDS",
+            "questions": [
+        {
+            "id": "hi19h01",
+            "type": "simple",
+            "text": "What is HIV",
+            "options": [
+                {
+                    "text": "A. bacteria that causes aids",
+                    "ans": false
+                },
+                {
+                    "text": "B. The virus that causes aids",
+                    "ans": true
+                },
+                {
+                    "text": "C. A Parasite",
+                    "ans": false
+                },
+                {
+                    "text": "D. A fly that causes malaria",
+                    "ans": false
+                }
+            ]
+        },
+        {
+            "id": "hi19h02",
+            "type": "simple",
+            "text": "To which of the the following Hiv virus to",
+            "options": [
+                {
+                    "text": "A. Cancer",
+                    "ans":false
+                },
+                {
+                    "text": "B. maleria",
+                    "ans":false
+                },
+                {
+                    "text": "C. AIDS",
+                    "ans":true
+                },
+                {
+                    "text": "D. hepetitis",
+                    "ans":false
+                }
+
+            ]
+        },
+        {
+
+            "id": "hi19h03",
+            "type": "simple",
+            "text": "What is the full form of HIV",
+            "options": [
+                {
+                    "text": "A. Human immuno deficiency virus",
+                    "ans":true
+                },
+                {
+                    "text": "B. Human immune virus",
+                    "ans":false
+                },
+                {
+                    "text": "C. Health immuno deficiency virus",
+                    "ans":false
+                },
+                {
+                    "text": "D. human inntereexchange virus",
+                    "ans":false
+                }
+
+            ]
+        },
+        {
+
+            "id": "hi19h04",
+            "type": "simple",
+            "text": "When was HIV first recognized ",
+            "options": [
+                {
+                    "text": "A. 1970",
+                    "ans":false
+                },
+                {
+                    "text": "B. 1975",
+                    "ans":false
+                },
+                {
+                    "text": "C. 1981",
+                    "ans":true
+                },
+                {
+                    "text": "D. 1986",
+                    "ans":false
+                }
+
+            ]
+        },
+        {
+
+            "id": "hi19h05",
+            "type": "simple",
+            "text": "Where did HIV originate",
+            "options": [
+                {
+                    "text": "A. Mad Cow",
+                    "ans":false
+                },
+                {
+                    "text": "B. chimpanzee",
+                    "ans":true
+                },
+                {
+                    "text": "C. A Dog",
+                    "ans":false
+                },
+                {
+                    "text": "D. A human",
+                    "ans":false
+                }
+
+            ]
+        },
+        {
+
+            "id": "hi19h06",
+            "type": "simple",
+            "text": "which cell are destroyed by HIV",
+            "options": [
+                {
+                    "text": "A. Red blood cells",
+                    "ans":false
+                },
+                {
+                    "text": "B. White blood cell called K-helper cells",
+                    "ans":false
+                },
+                {
+                    "text": "C. All white cells",
+                    "ans":false
+                },
+                {
+                    "text": "D. White blood cell called T helper cells",
+                    "ans":true
+                }
+
+            ]
+        },
+        {
+
+            "id": "hi19h07",
+            "type": "simple",
+            "text": "Hiv affect cell in which system of the body",
+            "options": [
+                {
+                    "text": "A. Immune system",
+                    "ans":true
+                },
+                {
+                    "text": "B. Endocrine system",
+                    "ans":false
+                },
+                {
+                    "text": "C. Digestive system",
+                    "ans":false
+                },
+                {
+                    "text": "D. Central nervous system",
+                    "ans":false
+                }
+
+            ]
+        },
+        {
+
+            "id": "hi19h08",
+            "type": "simple",
+            "text": "What is AIDS",
+            "options": [
+                {
+                    "text": "A. A fumgal infection",
+                    "ans":false
+                },
+                {
+                    "text": "B. A rare blood cancer",
+                    "ans":false
+                },
+                {
+                    "text": "C. A group of disease caused by Hiv",
+                    "ans":false
+                },
+                {
+                    "text": "D. the final stage of HIV",
+                    "ans":true
+                }
+
+            ]
+        },
+        {
+
+            "id": "hi19h09",
+            "type": "simple",
+            "text": "Which is the full form of AIDS",
+            "options": [
+                {
+                    "text": "A. Acquired immunodeficiency symptoms",
+                    "ans":false
+                },
+                {
+                    "text": "B. Accepted immunideficency symptoms",
+                    "ans":false
+                },
+                {
+                    "text": "C. Aquired immunodeficiency system",
+                    "ans":false
+                },
+                {
+                    "text": "D. Acquired Immunodeficency syndrome",
+                    "ans":true
+                }
+
+            ]
+        },
+        {
+
+            "id": "hi19h10",
+            "type": "simple",
+            "text": "HIV is spread by mosquitoes",
+            "options": [
+                {
+                    "text": "A. True",
+                    "ans":false
+                },
+                {
+                    "text": "B. False",
+                    "ans":true
+                }
+            ]
+        },
+        {
+
+                "id": "hi19h011",
+                "type": "simple",
+                "text": "What does hiv positive mean ",
+                "options": [
+                    {
+                        "text": "A. Either antibodies agiainst hiv or the virus particules the;selves are present in the blood",
+                        "ans":true
+                    },
+                    {
+                        "text": "B. You have  ben tested for HIV",
+                        "ans":false
+                    },
+                    {
+                        "text": "C. Your white cell count is high",
+                        "ans":false
+                    },
+                    {
+                        "text": "D. You have been informed about HIV",
+                        "ans":true
+                    }
+    
+                ]
+            },
+            {
+
+                "id": "hi19h12",
+                "type": "simple",
+                "text": "Which of these is a symptom of hiv",
+                "options": [
+                    {
+                        "text": "A. Fever",
+                        "ans":false
+                    },
+                    {
+                        "text": "B. Tiredness",
+                        "ans":false
+                    },
+                    {
+                        "text": "C. Swollen lymph node",
+                        "ans":false
+                    },
+                    {
+                        "text": "D. All of the above",
+                        "ans":true
+                    }
+    
+                ]
+            },
+            {
+
+                "id": "hi19h13",
+                "type": "simple",
+                "text": "How does HIV becomes AIDS",
+                "options": [
+                    {
+                        "text": "A. HIV attacks the  cells",
+                        "ans":false
+                    },
+                    {
+                        "text": "B. HIV make multiple copies of itself",
+                        "ans":false
+                    },
+                    {
+                        "text": "C. HIV destroys cell in the body",
+                        "ans":false
+                    },
+                    {
+                        "text": "D. All of the above",
+                        "ans":true
+                    }
+    
+                ]
+            },
+            {
+                "id": "hi19h14",
+                "type": "simple",
+                "text":"A person has AIDS when which of these occurs",
+                "options":[
+                    {
+                        "text": "A. Exposure to HIV",
+                        "ans":false
+                    },
+                    {
+                        "text": "B. HIV anti bodies are found in the blood",
+                        "ans":false
+                    },
+                    {
+                        "text": "C. The CD4 count is lower than 200 or opportunistic infection develop in an HIV infected person",
+                        "ans":false
+                    },
+                    {
+                        "text": "D. A person has HIV for 5 years",
+                        "ans":true
+                    }
+                ]
+            },
+            {
+                "id": "hi19h15",
+                "type": "simple",
+                "text":"what is the symbol of HIV –positive people",
+                "options":[
+                    {
+                        "text": "A. red ribbon",
+                        "ans":true
+                    },
+                    {
+                        "text": "B. white ribbon",
+                        "ans":false
+                    },
+                    {
+                        "text": "C. yellow ribbon",
+                        "ans":false
+                    },
+                    {
+                        "text": "D. blue ribbon ",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id": "hi19h16",
+                "type": "simple",
+                "text":"In which country AIDS was first clinicly observed",
+                "options":[
+                    {
+                        "text": "A. India",
+                        "ans":false
+                    },
+                    {
+                        "text": "B. USA",
+                        "ans":true
+                    },
+                    {
+                        "text": "C. Norway",
+                        "ans":false
+                    },
+                    {
+                        "text": "D. Pakistan",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id": "hi19h17",
+                "type": "simple",
+                "text":"HIV only affects certain groups of people",
+                "options":[
+                    {
+                        "text": "A. True",
+                        "ans":true
+                    },
+                    {
+                        "text": "B. False",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id": "hi19h18",
+                "type": "simple",
+                "text":"Which of the following doen't contain HIV",
+                "options":[
+                    {
+                        "text": "A. Blood",
+                        "ans":false
+                    },
+                    {
+                        "text": "B. Breast Milk",
+                        "ans":false
+                    },
+                    {
+                        "text": "C. Sweat",
+                        "ans":true
+                    },
+                    {
+                        "text": "D. Seminal and Presemina fluid (cum and pre-cum)",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id": "hi19h19",
+                "type": "simple",
+                "text": "Which of the following is not considered a commond method for the transmission for HIV",
+                "options":[
+                    {
+                        "text": "A. Breast Milk",
+                        "ans":true
+                    },
+                    {
+                        "text": "B. Blood",
+                        "ans":false
+                    },
+                    {
+                        "text": "C. Urine",
+                        "ans":false
+                    },
+                    {
+                        "text": "D. All of the above",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id": "hi19h20",
+                "type": "simple",
+                "text":"Insect bites can transmite HIV",
+                "options":[
+                    {
+                        "text": "A. True",
+                        "ans":false
+                    },
+                    {
+                        "text": "B. False",
+                        "ans":true
+                    }
+                    
+                ]
+            },
+            {
+                "id": "hi19h21",
+                "type": "simple",
+                "text": "Is HIV manegable",
+                "options":[
+                    {
+                        "text": "A. Yes",
+                        "ans":true
+                    },
+                    {
+                        "text": "B. No",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id": "hi19h22",
+                "type": "simple",
+                "text": "Which of the following prevent HIV",
+                "options":[
+                    {
+                        "text": "A. Washing after Sex",
+                        "ans":false
+                    },
+                    {
+                        "text": "B. Comdoms",
+                        "ans":true
+                    },
+                    {
+                        "text": "C. contraceptie pill",
+                        "ans":false
+                    },
+                    {
+                        "text": "D. The Pull out method",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id": "hiv19h22",
+                "type": "simple",
+                "text": "Is it possible for parent living with HIV to have an hiv negative baby.",
+                "options":[
+                    {
+                        "text":"A. Yes",
+                        "ans":true
+                    },
+                    {
+                        "text":"B. No",
+                        "ans":true
+                    }
+                    
+                ]
+            },
+            {
+                "id": "hiv19h23",
+                "type": "simple",
+                "text": "what can condoms protect you from",
+                "options":[
+                    {
+                        "text":"A. Pregnancy",
+                        "ans":false
+                    },
+                    {
+                        "text":"B. HIV",
+                        "ans":false
+                    },
+                    {
+                        "text":"C. STDs",
+                        "ans":false
+                    },
+                    {
+                        "text":"D. All of the above",
+                        "ans":true
+                    }
+                ]
+            },
+            {
+                "id": "hiv19h24",
+                "type": "simple",
+                "text": "Which of this things can transmit",
+                "options":[
+                    {
+                        "text":"A. Kissing",
+                        "ans":false
+                    },
+                    {
+                        "text":"B. Sharing needles",
+                        "ans":false
+                    },
+                    {
+                        "text":"C. Shaking hands and hugging",
+                        "ans":false
+                    },
+                    {
+                        "text":"All of th above",
+                        "ans":true
+                    }
+                ]
+            },
+            {
+                "id": "hiv19h25",
+                "type": "simple",
+                "text": "When a pregnant woman has HIV the baby always get it too",
+                "options":[
+                    {
+                        "text":"True",
+                        "ans":false
+                    },
+                    {
+                        "text":"False",
+                        "ans":true
+                    }
+                    
+                ]
+            },
+            {
+                "id": "hiv19h26",
+                "type": "simple",
+                "text": "You can tell if people have HIV/AIDS by looking at them",
+                "options":[
+                    {
+                        "text":"True",
+                        "ans":false
+                    },
+                    {
+                        "text":"False",
+                        "ans":true
+                    }
+
+                ]
+            },
+            {
+                "id":"hiv19h27",
+                "type":"simple",
+                "text":"Why is HIV testing important?",
+                "options": [
+                    {
+                        "tex": "A. Because it is the only way to know if have HIV",
+                        "ans":true
+                    },
+                    {
+                        "text": "B. Because it is free",
+                        "ans":false
+                    },
+                    {
+                        "text":"C. Because it is impossible",
+                        "ans":false
+                    },
+                    {
+                        "text":"D. Because it do not take time",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"hiv19h28",
+                "type":"simple",
+                "text":"There are vacine that prevent HIV completely",
+                "options": [
+                    {
+                        "text":"True",
+                        "ans":false
+                    },
+                    {
+                        "text":"False",
+                        "ans":true
+                    }
+                ]
+            },
+            {
+                "id":"hiv19h29",
+                "type":"simple",
+                "text":"which is the first most common way of spreading HIV",
+                "options": [
+                    {
+                        "text":"A. Sharing needles",
+                        "ans":false
+                    },
+                    {
+                        "text":"B. From injected mother to child",
+                        "ans":false
+                    },
+                    {
+                        "text":"C. Sharing Food",
+                        "ans":false
+                    },
+                    {
+                        "text":"D. Sexual intercourse with Hiv infected person",
+                        "ans":true
+                    }
+                ]
+            },
+            {
+                "id":"hiv19h30",
+                "type":"simple",
+                "text":"What is the best way to protected yourself againts HIV",
+                "options": [
+                    {
+                        "text":"A. Use birth controll pills",
+                        "ans":false
+                    },
+                    {
+                        "text":"B. Use a latex condom during sexual intercourse",
+                        "ans":true
+                    },
+                    {
+                        "text":"C. Get your self Vacinated for HIV",
+                        "ans":false
+                    },
+                    {
+                        "text":"D. All of the above",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"hiv19h31",
+                "type":"simple",
+                "text":"which is the second most common way of spreading HIV",
+                "options": [
+                    {
+                        "text":"A. Sharing needles",
+                        "ans":false
+                    },
+                    {
+                        "text":"B. from infected mother  to child",
+                        "ans":true
+                    },
+                    {
+                        "text":"C. sharing food",
+                        "ans":false
+                    },
+                    {
+                        "text":"D. sexual intercourse with hiv infected person",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"hiv19h32",
+                "type":"simple",
+                "text":"Most teenager with hiv become infected",
+                "options": [
+                    {
+                        "text":"A. From sharing needles and syringes or having sex with hiv infected patient",
+                        "ans":true
+                    },
+                    {
+                        "text":"B. From blood transfusion",
+                        "ans":false
+                    },
+                    {
+                        "text":"C. Through causal contact ",
+                        "ans":false
+                    },
+                    {
+                        "text":"D.Through kissing",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"hiv19h33",
+                "type":"simple",
+                "text":"hiv may be spread from contaminated needles when",
+                "options": [
+                    {
+                        "text":"A. Piercing ears or other body parts",
+                        "ans":false
+                    },
+                    {
+                        "text":"B. Injecting drugs",
+                        "ans":false
+                    },
+                    {
+                        "text":"C. Injecting steroids",
+                        "ans":false
+                    },
+                    {
+                        "text":"D. All the above",
+                        "ans":true
+                    }
+                ]
+            },
+            {
+                "id":"hiv19h34",
+                "type":"simple",
+                "text":"what does HIV treatment do",
+                "options": [
+                    {
+                        "text":"A. Cure HIV",
+                        "ans":false
+                    },
+                    {
+                        "text":"B. improve bu not lengthen your life",
+                        "ans":false
+                    },
+                    {
+                        "text":"C. Lengthen but not improve your life",
+                        "ans":false
+                    },
+                    {
+                        "text":"D. Enable you to live just as long and well as people who don’t have HIV",
+                        "ans":true
+                    }
+                ]
+            },
+            {
+                "id":"hiv19h35",
+                "type":"simple",
+                "text":"When should you start treatment",
+                "options": [
+                    {
+                        "text":"A. A late as possible",
+                        "ans":false
+                    },
+                    {
+                        "text":"B. As soon as possible",
+                        "ans":true
+                    },
+                    {
+                        "text":"C. When you start feel sick ",
+                        "ans":false
+                    },
+                    {
+                        "text":"D. Anytime",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"hiv19h36",
+                "type":"simple",
+                "text":"How does HIv treatment work",
+                "options": [
+                    {
+                        "text":"A. Acts as a painkiller",
+                        "ans":false
+                    },
+                    {
+                        "text":"B. Destroys all hiv in the body",
+                        "ans":false
+                    },
+                    {
+                        "text":"C. Reduces the amount of hiv in the body and boosts the immune system",
+                        "ans":true
+                    },
+                    {
+                        "text":"D. Make your nervous system more effective",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"hiv19h37",
+                "type":"simple",
+                "text":"what is the best way to ensure your treatment works properly",
+                "options": [
+                    {
+                        "text":"A. Taking your medication consistently",
+                        "ans":true
+                    },
+                    {
+                        "text":"B. Taking you pills in  bursts every now and again",
+                        "ans":false
+                    },
+                    {
+                        "text":"C. Only taking your pills when fill unwell",
+                        "ans":false
+                    },
+                    {
+                        "text":"D. Getting plenty of rest and avoiding spending too much time in the sun",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"hiv19h38",
+                "type":"simple",
+                "text":"what should you do if your medicine isn’t agreeing with you",
+                "options": [
+                    {
+                        "text":"A.  look for alternative herbal medicine",
+                        "ans":false
+                    },
+                    {
+                        "text":"B. top taking your mediation",
+                        "ans":false
+                    },
+                    {
+                        "text":"C. keep taking the medicine",
+                        "ans":false
+                    },
+                    {
+                        "text":"D.Speak to you doctor about your symptoms there might be other treatment option ",
+                        "ans":true
+                    }
+                ]
+            },
+            {
+                "id":"hiv19h39",
+                "type":"simple",
+                "text":"What does being undetectable mean",
+                "options": [
+                    {
+                        "text":"A. you don’t have symptoms  so there is no evidence that you have HIV",
+                        "ans":false
+                    },
+                    {
+                        "text":"B. other people can’t tell you have hiv because your treatment is working",
+                        "ans":false
+                    },
+                    {
+                        "text":"C. The level of hiv in the blood is so low it can't  be detected in test and can’t be passed on",
+                        "ans":true
+                    },
+                    {
+                        "text":"D. Have no longer HIV",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"hiv19h40",
+                "type":"simple",
+                "text":"HIV treatment can be taken with any other medicines",
+                "options": [
+                    {
+                        "text":"A. True",
+                        "ans":false
+                    },
+                    {
+                        "text":"B. False",
+                        "ans":true
+                    }
+                ]
+            },
+            {
+                "id":"hiv19h41",
+                "type":"simple",
+                "text":"so long as you are taking the treatment your treatment then you are undetectable",
+                "options": [
+                    {
+                        "text":"A. True",
+                        "ans":false
+                    },
+                    {
+                        "text":"B. False",
+                        "ans":true
+                    }
+                ]
+            },
+            {
+                "id":"hiv19h42",
+                "type":"simple",
+                "text":"Why is a combination of medicines called a cocktail used too treat HIV",
+                "options": [
+                    {
+                        "text":"A. The virus changes rapidly",
+                        "ans":false
+                    },
+                    {
+                        "text":"B.  Combining medicines triples their strength",
+                        "ans":false
+                    },
+                    {
+                        "text":"C. Each person  responds to each medicines differentl",
+                        "ans":false
+                    },
+                    {
+                        "text":"D. A and C",
+                        "ans":true
+                    }
+                ]
+            },
+            {
+                "id":"hiv19h43",
+                "type":"simple",
+                "text":"Opportunistic infections qre ;ore  frequent and ;ore severe in people with HIV",
+                "options": [
+                    {
+                        "text":"A. True",
+                        "ans":true
+                    },
+                    {
+                        "text":"B. False",
+                        "ans":false
+                    }
+                ]
+            }
+    ]
     },
     "breast_cancer": {
         "title": "Breast Cancer",
         "description": "breast cancer",
-        "questions": []
+        "questions": [
+            {
+                "id":"brc19bc00",
+                "type":"simple",
+                "text":"Which are the four most common cancers in the UK",
+                "options": [
+                    {
+                        "text":"A. Pancreas, bladder, brain, lung",
+                        "ans":false
+                    },
+                    {
+                        "text":"B.  Stomach, breast, kidney, melanoma",
+                        "ans":false
+                    },
+                    {
+                        "text":"C. Breast, lung, prostate, colorectum",
+                        "ans":true
+                    },
+                    {
+                        "text":"D.Endometrium, brain, oesophagus, non-Hodgkin lymphoma",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc01",
+                "type":"simple",
+                "text":"Which is the most reliable type of observational study for investigating the link between diet and cancer?",
+                "options": [
+                    {
+                        "text":"A. Randomised controlled trial",
+                        "ans":false
+                    },
+                    {
+                        "text":"B. Prospective study",
+                        "ans":true
+                    },
+                    {
+                        "text":"C. Ecological study",
+                        "ans":false
+                    },
+                    {
+                        "text":"D. Case-control study",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc02",
+                "type":"simple",
+                "text":"Which of these factors increases the risk for cancer of the oesophagus?",
+                "options": [
+                    {
+                        "text":"A. Processed meat",
+                        "ans":false
+                    },
+                    {
+                        "text":"B. Fruit and vegetables",
+                        "ans":false
+                    },
+                    {
+                        "text":"C. Salt",
+                        "ans":false
+                    },
+                    {
+                        "text":"D. Alcohol",
+                        "ans":true
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc03",
+                "type":"simple",
+                "text":"Which of these factors increases the risk for cancer of the stomach?",
+                "options": [
+                    {
+                        "text":"A. Obesity",
+                        "ans":false
+                    },
+                    {
+                        "text":"B. Sugar",
+                        "ans":false
+                    },
+                    {
+                        "text":"C.  Salt and salt-preserved foods",
+                        "ans":true
+                    },
+                    {
+                        "text":"D. Dietary fibre",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc04",
+                "type":"simple",
+                "text":"Which of these factors reduces the risk for cancer of the colorectum?",
+                "options": [
+                    {
+                        "text":"A.Vitamin C",
+                        "ans":false
+                    },
+                    {
+                        "text":"B.Dietary fibre",
+                        "ans":true
+                    },
+                    {
+                        "text":"C. Alcohol",
+                        "ans":false
+                    },
+                    {
+                        "text":"D. Oestrogen",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc05",
+                "type":"simple",
+                "text":"Which of these factors increases the risk for postmenopausal breast cancer?",
+                "options": [
+                    {
+                        "text":"A.Red meat",
+                        "ans":false
+                    },
+                    {
+                        "text":"B.Dietary fat",
+                        "ans":false
+                    },
+                    {
+                        "text":"C. Fish",
+                        "ans":false
+                    },
+                    {
+                        "text":"D.Obesity",
+                        "ans":true
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc06",
+                "type":"simple",
+                "text":"Which of these factors is associated with an increase in the risk for prostate cancer?",
+                "options": [
+                    {
+                        "text":"A. Insulin-like growth factor-1",
+                        "ans":true
+                    },
+                    {
+                        "text":"B. Dietary fat",
+                        "ans":false
+                    },
+                    {
+                        "text":"C.Alcohol",
+                        "ans":false
+                    },
+                    {
+                        "text":"D.Salt",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc07",
+                "type":"simple",
+                "text":"Which of these factors increases the risk for lung cancer?",
+                "options": [
+                    {
+                        "text":"A.Saturated fat",
+                        "ans":false
+                    },
+                    {
+                        "text":"B.Obesity",
+                        "ans":false
+                    },
+                    {
+                        "text":"C.High dose ß-carotene supplements",
+                        "ans":true
+                    },
+                    {
+                        "text":"D.Alcohol",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc08",
+                "type":"simple",
+                "text":"Approximately what proportion of cancers in the UK is caused by dietary factors, including obesity and alcohol?",
+                "options": [
+                    {
+                        "text":"A.10%",
+                        "ans":false
+                    },
+                    {
+                        "text":"B.20%",
+                        "ans":false
+                    },
+                    {
+                        "text":"C.30%",
+                        "ans":true
+                    },
+                    {
+                        "text":"D.40%",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc09",
+                "type":"simple",
+                "text":"Obesity increases the risk of endometrial cancer. Which hormone is thought to mediate this effect?",
+                "options": [
+                    {
+                        "text":"A.Testosterone",
+                        "ans":false
+                    },
+                    {
+                        "text":"B.Oestrogen",
+                        "ans":true
+                    },
+                    {
+                        "text":"C.Insulin-like growth factor-1",
+                        "ans":false
+                    },
+                    {
+                        "text":"D.Thyroxine",
+                        "ans":false
+                    }
+                ]
+            }
+        ]
     },
     "hepatitis": {
         "title": "Hepatitis",
@@ -115,3 +1575,4 @@
         "questions": []
     }   
 }
+
