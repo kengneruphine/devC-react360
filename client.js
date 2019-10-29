@@ -1,7 +1,6 @@
 
 import {ReactInstance, Surface, Location, Module} from 'react-360-web';
 import { card } from './utils'
-
 // instance used for wide application data transport
 class TemporalStore extends Module {
   quiz = {  
