@@ -64,7 +64,7 @@ export class ExploreCard extends React.Component{
     render(){
       return (
         <View style={styles.card}>
-            <Image source={asset('img/explore.jpg')} style={{
+            <Image source={asset('img/explore.png')} style={{
               width: 500,
               height: 300,
               justifyContent: 'center',
@@ -94,7 +94,7 @@ export class VideoCard extends React.Component{
     render(){
       return (
         <View style={styles.card}>
-             <Image source={asset('img/video.jpg')} style={{
+             <Image source={asset('img/watch.png')} style={{
               width: 500,
               height: 300,
               justifyContent: 'center',

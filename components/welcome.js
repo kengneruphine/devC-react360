@@ -22,7 +22,7 @@ const { AudioModule } = NativeModules;
 
 AudioModule.playEnvironmental({
   source: ('John Legend -All of Me (lyrics).mp3'),
-  volume: 0.7, // play at 3/10 original volume
+  volume: 0.5, // play at 3/10 original volume
 });
 
 // play environental Video
