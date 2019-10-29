@@ -113,6 +113,42 @@
     "hepatitis": {
         "title": "Hepatitis",
         "description": "hepatitis",
-        "videos": []
+        "videos": [
+            {
+                "id": "693c5545",
+                "label": "Introduction to Cirrhosis Hepatitis",
+                "link": "1. Introduction to Cirrhosis.mp4"
+            },
+            {
+                "id": "693c5545",
+                "label": "Formation of Fibrotic Tissue and Collagen",
+                "link": "2. Formation of Fibrotic Tissue and Collagen.mp4"
+            },
+            {
+                "id": "693c5545",
+                "label": "Complications to Cirrhosis",
+                "link": "3. Complications to Cirrhosis.mp4"
+            },
+            {
+                "id": "693c5545",
+                "label": "Complications to Cirrhosis Continued",
+                "link": "4. Complications to Cirrhosis Continued.mp4"
+            },
+            {
+                "id": "693c5545",
+                "label": "Symptoms of Cirrhosis",
+                "link": "5. Symptoms of Cirrhosis.mp4"
+            },
+            {
+                "id": "693c5545",
+                "label": "Treatment of Cirrhosis",
+                "link": "6. Treatment of Cirrhosis.mp4"
+            },
+            {
+                "id": "693c5545",
+                "label": "Summary on Cirrhosis",
+                "link": "7. Summary on Cirrhosis.mp4"
+            }
+        ]
     }   
 }
