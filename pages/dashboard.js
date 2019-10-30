@@ -115,12 +115,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-
   card: {
       height: 300,
       width: 500,
-      borderColor: "#3267FC",
-      borderWidth: 1,
+      borderColor: "white",
+      borderWidth: 2,
       position: 'relative',
       borderRadius: 10,
   },

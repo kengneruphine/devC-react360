@@ -28,6 +28,7 @@ export default class Game extends React.Component {
           showScore: false,
           questions: questions[TemporalStore.quiz.currentQuiz],
           options: null,
+          questionCount: questions[TemporalStore.quiz.currentQuiz]['questions'].length,
           currentQuestionIndex: 0
       }
       this.showAnswer = this.showAnswer.bind(this)
@@ -58,9 +59,14 @@ export default class Game extends React.Component {
       return jsxFormatedQuestion
   }
   showQuiz(){
-      const question = this.state.questions['questions'][this.state.currentQuestionIndex]
-      const options = question.options
-      this.setState({currentQuestion: this.formQuestion(question), currentQuestionOptions: options})
+      if(this.state.questionCount){
+          const question = this.state.questions['questions'][this.state.currentQuestionIndex]
+          const options = question.options
+          this.setState({currentQuestion: this.formQuestion(question), currentQuestionOptions: options})
+      }else {
+          this.setState({currentQuestion: <View><Text>No questions available for this quiz.</Text></View>})
+      }
+     
   }
   showAnswer(){
       // search quiz for answer
@@ -69,8 +75,7 @@ export default class Game extends React.Component {
             option.ans? this.setState({answer : option.text}) : ''
       }
   }
-  async nextQuestion(){
-      
+  async nextQuestion(){   
       this.state.currentQuestionIndex = this.state.currentQuestionIndex + 1
       // show score if we at the end of the questions
       if(this.state.currentQuestionIndex > this.state.questions['questions'].length){
@@ -166,24 +171,24 @@ export default class Game extends React.Component {
             </VrButton>
         </View>
         <View style={styles.quizBox}>
-          <View style={styles.container}>
-            <View style={styles.question}>
-                <View>
-                    <Text style={{textAlign: 'center'}}>{this.state.currentQuestionIndex + 1}/{this.state.questions['questions'].length}</Text>
+            <View style={styles.container}>
+                <View style={styles.question}>
+                    <View>
+                        <Text style={{textAlign: 'center'}}>{this.state.currentQuestionIndex + 1}/{this.state.questions['questions'].length}</Text>
+                    </View>
+                    {
+                        this.state.currentQuestion
+                    }
                 </View>
-                {
-                    this.state.currentQuestion
-                }
+                <View style={styles.options}>
+                    <OptionsModule options={this.state.currentQuestionOptions} />
+                </View>
             </View>
-            <View style={styles.options}>
-                <OptionsModule options={this.state.currentQuestionOptions} />
-            </View>
-          </View>
         </View>
         <View style={[styles.answerContainer]}>
-            <Text>{this.state.answer}</Text>
+          <Text>{this.state.answer}</Text>
         </View>
-        <View style={[styles.actionsContainer]}>
+        <View style={[styles.actionsContainer, {display: this.state.questionCount ? 'block': 'none'}]}>
             {/* <VrButton style={[styles.button, {backgroundColor: 'red', borderColor: 'transparent', margin: 5, height: 50} ]} onClick={this.prevQuestion} >
               <Text
                 style={[styles.actions]}>
@@ -312,14 +317,14 @@ const styles = StyleSheet.create({
       position: 'relative',
       width: 1000,
       height: 600,
-      backgroundColor: 'black',
+      backgroundColor: 'rgba(88, 21, 26, 0.8)',
     },
     panelDetailSurface:{
       height: 400,
       width: 300,
-      backgroundColor: "black",
+      backgroundColor: "rgba(88, 21, 26, 0.8)",
       borderWidth: 0,
-      borderColor: 'black',
+      borderColor: 'transparent',
       padding: 0,
       position: 'relative'
     },
@@ -346,18 +351,21 @@ const styles = StyleSheet.create({
       position: 'relative',
       left: 50,
       padding: 5,
-      backgroundColor: '#000000',
-      borderWidth: 2,
+      backgroundColor: "transparent",
+      borderWidth: 0,
       height: 400,
       width: 700,
     },
     answerContainer: {
-      height: 50
+      height: 50,
+      backgroundColor: "transparent",
+      borderWidth: 0
     },
     options: {
       padding: 5,
-      backgroundColor: '#000000',
-      borderWidth: 2,
+      backgroundColor: "transparent",
+      borderWidth: 0,
+      borderColor: 'transparent',
       width: 399,
     },
     button: {
@@ -369,8 +377,9 @@ const styles = StyleSheet.create({
     },
     question: {
       width: 399,
-      borderWidth: 2,
+      borderWidth: 0,
       margin: 2,
+      backgroundColor: "transparent"
 
     },
     container: {
@@ -386,7 +395,7 @@ const styles = StyleSheet.create({
     },
     levelBarContainer:{
       width: 200,
-      backgroundColor: 'transparent',
+      backgroundColor: "rgba(88, 21, 26, 0.8)",
       height: 20,
       marginLeft: 18,
       borderRadius:10,

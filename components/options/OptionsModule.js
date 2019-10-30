@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, VrButton, Text,StyleSheet,} from 'react-360';
+import { View, StyleSheet,} from 'react-360';
 import Option from './Option';
 
 
@@ -26,7 +26,7 @@ export default class OptionsModule extends React.Component {
 
 const styles = StyleSheet.create({
   options: {
-    borderWidth: 2,
+    borderWidth: 0,
     justifyContent: 'center',
   },
 })

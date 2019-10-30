@@ -1,7 +1,6 @@
 
 import {ReactInstance, Surface, Location, Module} from 'react-360-web';
 import { card } from './utils'
-
 // instance used for wide application data transport
 class TemporalStore extends Module {
   quiz = {  
@@ -82,7 +81,7 @@ function init(bundle, parent, options = {}) {
     'Index'
   )
   // Load the initial environment
-  r360.compositor.setBackground(r360.getAssetURL('360_world3.jpg'));
+  r360.compositor.setBackground(r360.getAssetURL('169523.jpg'));
   
 }
 window.React360 = {init};

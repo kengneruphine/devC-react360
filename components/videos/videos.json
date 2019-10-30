@@ -2,6 +2,7 @@
     "malaria": {
         "title": "Malaria",
         "description": "This is a description of malaria",
+        "credits": "www.osmosis.org",
         "videos": [
             {
                 "id": "2661574c",
@@ -113,6 +114,79 @@
     "hepatitis": {
         "title": "Hepatitis",
         "description": "hepatitis",
-        "videos": []
+        "credits": "www.osmosis.org",
+        "videos": [
+            {
+                "id": "3fecff6e",
+                "label": "Introduction to viral Hepatitis",
+                "link": "1. Introduction to viral Hepatitis.mp4"
+            },
+            {
+                "id": "fbf7dbad",
+                "label": "Symptoms",
+                "link": "2. Symptoms.mp4"
+            },
+            {
+                "id": "ee8986c5",
+                "label": "Lymphocytosis",
+                "link": "3. Lymphocytosis.mp4"
+            },
+            {
+                "id": "def29d8c",
+                "label": "Jaundice",
+                "link": "4. Jaundice.mp4"
+            },
+            {
+                "id": "7d3a7ec1",
+                "label": "Stages of Hepatitis",
+                "link": "5. Stages of Hepatitis.mp4"
+            },
+            {
+                "id": "4cc28716",
+                "label": "Hepatitis A",
+                "link": "6. Hepatitis A.mp4"
+            },
+            {
+                "id": "1d1ac013",
+                "label": "Hepatitis E",
+                "link": "7. Hepatitis E.mp4"
+            },
+            {
+                "id": "c26f5f95",
+                "label": "Hepatitis C",
+                "link": "8. Hepatitis C.mp4"
+            },
+            {
+                "id": "6109fbf0",
+                "label": "Hepatitis B",
+                "link": "9. Hepatitis B.mp4"
+            },
+            {
+                "id": "26ac80e2",
+                "label": "Serology of HBV",
+                "link": "10. Serology of HBV.mp4"
+            },
+            {
+                "id": "3b2ae427",
+                "label": "HBV: Progression of infection",
+                "link": "11. HBV: Progression of infection.mp4"
+            },
+            {
+                "id": "0a7a13b1",
+                "label": "HBV: Chronic Hepatitis",
+                "link": "12. HBV: Chronic Hepatitis.mp4"
+            },
+            {
+                "id": "43627fc7",
+                "label": "13. HBV: Chronic infective Hepatitis",
+                "link": "13. HBV: Chronic infective Hepatitis.mp4"
+            },
+            {
+                "id": "358d6f00",
+                "label": "14. Hepatitis D",
+                "link": "14. Hepatitis D.mp4"
+            }
+
+        ]
     }   
 }

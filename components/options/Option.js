@@ -16,7 +16,7 @@ export default class Option extends React.Component{
         width: 400,
         height: 50,
         borderColor: '#fff',
-        borderWidth: 2,
+        borderWidth: 0,
         padding: 5, 
         margin: 5,
         backgroundColor :'black'}})
@@ -38,7 +38,7 @@ export default class Option extends React.Component{
              this.setState({
               btnStyle: {
                   width: 350,
-                  borderWidth: 2,
+                  borderWidth: 0,
                   padding: 5,
                   margin: 5,
                   backgroundColor : color,
@@ -48,7 +48,7 @@ export default class Option extends React.Component{
             this.setState({
               btnStyle: {
                   width: 350,
-                  borderWidth: 2,
+                  borderWidth: 0,
                   padding: 5,
                   margin: 5,
                   backgroundColor : "red"
