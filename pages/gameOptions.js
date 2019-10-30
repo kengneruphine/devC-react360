@@ -40,7 +40,7 @@ export default class GameOptions extends React.Component {
                         TemporalStore.quiz.currentQuiz = disease
                         this.props.history.push('/game/play')
                     }}>
-                        <Text>{questions[disease].title}</Text>
+                        <Text style={{color: 'white'}}>{questions[disease].title}</Text>
                     </VrButton>
             </View>))
           }
@@ -53,7 +53,7 @@ export default class GameOptions extends React.Component {
                           }}
                               source={asset('img/nav_back.png')} />  
                   </VrButton>
-              </View>
+            </View>
           </View>
           
       </View>
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     position: 'relative',
     width: 1000,
     height: 600,
-    backgroundColor: 'black',
+    backgroundColor: 'rgba(88, 21, 26, 0.8)',
   },
   listContainer:{
     position: 'relative',
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     height: 50,
     padding: 10,
-    borderWidth: 2,
+    borderWidth: 3,
   },
   header:{
     margin: 20,

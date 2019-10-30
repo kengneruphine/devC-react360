@@ -35,14 +35,16 @@ export default class Welcome extends React.Component {
   render() {
     return (
       <View style={styles.panel}>
-
-          <View style={styles.panel} >
-            <Image source={asset('wecomeimg.jpg')} style={{
-              width: 1000,
-              height: 300,
-              justifyContent: 'center',
-              alignItems: 'center',
-            }} />
+              <View>
+                <Image source={asset('logo2.jpeg')} style={{
+                    width: 300,
+                    height: 300,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    borderRadius: 5
+                  }} />
+              </View>
+              
             <Text style={{ fontSize: 40, fontWeight: 'bold', textAlign: 'center' }}>
                HealthPro educating you on Africa's most deadly diseases through VR.
             </Text>
@@ -50,8 +52,8 @@ export default class Welcome extends React.Component {
             this.props.history.push('./dashboard')
           }} 
            style={{
-            borderColor: '#639dda',
-            borderWidth: 5,
+            borderColor: 'white',
+            borderWidth: 3,
             padding: 15,
             margin: 3,
           }}>
@@ -67,7 +69,6 @@ export default class Welcome extends React.Component {
               GET STARTED
           </Text>
           </VrButton>
-          </View>
       </View>
     );
   }

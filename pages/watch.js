@@ -37,7 +37,8 @@ export class WatchSurface extends React.Component{
        pause: false,
        started: false,
        videoId: Math.floor(Math.random() * 100),
-       surfaceColor: 'black'
+       surfaceColor: 'rgba(88, 21, 26, 0.8)',
+
     }
     constructor(props){
         super(props)
@@ -48,17 +49,17 @@ export class WatchSurface extends React.Component{
         
     }
     componentDidMount(){
-        let url = `${TemporalStore.video.currentWatch}/${this.state.videoLib[this.state.currentlyPlaying].link}`
-        player = VideoModule.createPlayer('WatchSurface' + this.state.videoId) 
-        console.log('WatchSurface' + this.state.videoId)
-        player.play({ source: { url: asset(url).uri}, stereo: '2D', autoPlay: false, volume: 1});
-        Environment.setScreen(
-              'defWatchSurface' + this.state.videoId, /* screen name */
-              'WatchSurface' + this.state.videoId, /* player unique id */
-              'WatchSurface', /* surface name */
-              0, 0, 650, 600 /* relative position on the surface */
-        );
-        console.log('component did mount')
+       if(this.state.videoLib.length){
+          let url = `${TemporalStore.video.currentWatch}/${this.state.videoLib[this.state.currentlyPlaying].link}`
+          player = VideoModule.createPlayer('WatchSurface' + this.state.videoId) 
+          player.play({ source: { url: asset(url).uri}, stereo: '2D', autoPlay: false, volume: 1});
+          Environment.setScreen(
+                'defWatchSurface' + this.state.videoId, /* screen name */
+                'WatchSurface' + this.state.videoId, /* player unique id */
+                'WatchSurface', /* surface name */
+                0, 0, 650, 600 /* relative position on the surface */
+          );
+       }
     }
     componentWillUnmount() {
       VideoModule.destroyPlayer('WatchSurface' + this.state.videoId)
@@ -129,8 +130,8 @@ export class WatchSurface extends React.Component{
                               source={asset('img/nav_back.png')} />
                     </VrButton>
                 </View>
-                <View style={{backgroundColor: 'rgba(0, 0, 0, 0.4)', height: 100, borderWidth: 0, position: 'relative', top: 500}}>
-                    <View>
+                <View style={{backgroundColor: 'rgba(0, 0, 0, 0.4)', height: 100, borderWidth: 0, position: 'relative', top: 500, display: this.state.videoLib.length ? 'block': 'none'}}>
+                      <View>
                         <Text style={{color: 'white', textAlign: 'center', fontSize: 14}}>
                             {this.state.currentlyPlayingText.length < 30 ?
                             this.state.currentlyPlayingText  :
@@ -164,7 +165,8 @@ export class WatchSurface extends React.Component{
                           </View>
                           
                       </View>
-                </View>                  
+                </View> 
+                <View style={{display: !this.state.videoLib.length ? 'block': 'none', padding: 20}}><Text style={{textAlign: 'center'}}>No videos available for this quiz.</Text></View>                 
               </View>
     }
 }
@@ -178,7 +180,7 @@ const styles = StyleSheet.create({
   panelWatchOptions:{
     height: 200,
     width: 300,
-    backgroundColor: "black"
+    backgroundColor: 'rgba(88, 21, 26, 0.8)',
   },
   panelWatchSurface:{
     height: 600,

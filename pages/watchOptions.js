@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     position: 'relative',
     width: 1000,
     height: 600,
-    backgroundColor: 'black',
+    backgroundColor: 'rgba(88, 21, 26, 0.8)',
   },
   listContainer:{
     position: 'relative',

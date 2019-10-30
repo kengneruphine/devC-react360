@@ -1,7 +1,7 @@
 {
     "malaria":{
         "title": "Malaria",
-        "description":"This is  a descriptions of malaria",
+        "description":"Malaria is a life-threatening disease caused by a parasite. It is transmitted through the bite if an infected mosquito. It is typically found in tropical and sub-tropical climates and can affects humans and other animals. In human there are 05 species that cause malaria. Malaria kills more than 445Â 000 people each years, many of them are children in Africa. Currently, there is no vaccine available.",
         "questions":  [
             {   
                 "id": "54ef18fb",
@@ -330,8 +330,8 @@
                 "text": "I can protect myself from malaria",
                 "options": [
                     {
-                        "text": "Using mosquito repellent",
-                        "ans": true
+                        "text": "Doing a lot of sport",
+                        "ans": false
                     },
                     {
                         "text": "Wearing light-coloured, long-sleeved shirts and trousers",
@@ -379,7 +379,7 @@
 
         "hiv_aids": {
             "title": "HIV/AIDS",
-            "description": "AIDS",
+            "description": "The human immunodeficiency virus (HIV) is the virus that kills the body immune system by destroying the white blood cells that fight infection and put you at risk for serious infections or cancers.  HIV also applied to refer to the HIV infection which is a sexual transmitted infection: it can spread by contact with certain bodily fluids of a person with HIV or from a mother to the child during pregnancy, childbirth or breastfeeding. \n AIDS is most advanced stage of HIV infection that occurs when the bodyâ€™s immune system is badly damaged because of the virus. \n HIV/AIDS has a large impact on society both as illness and as a source of discrimination. There is not cure but there are medicines that fight HIV/AIDS and lower the risk of infecting other",
             "questions": [
         {
             "id": "hi19h01",
@@ -623,10 +623,10 @@
 
                 "id": "hi19h011",
                 "type": "simple",
-                "text": "What does hiv positive mean ",
+                "text": "What does HIV positive mean ",
                 "options": [
                     {
-                        "text": "A. Either antibodies agiainst hiv or the virus particules the;selves are present in the blood",
+                        "text": "A. Either antibodies against HIV or the virus particles themselves are present in the blood",
                         "ans":true
                     },
                     {
@@ -634,12 +634,12 @@
                         "ans":false
                     },
                     {
-                        "text": "C. Your white cell count is high",
+                        "text": "C. Your white blood cell count is high",
                         "ans":false
                     },
                     {
                         "text": "D. You have been informed about HIV",
-                        "ans":true
+                        "ans":false
                     }
     
                 ]
@@ -720,7 +720,7 @@
             {
                 "id": "hi19h15",
                 "type": "simple",
-                "text":"what is the symbol of HIV –positive people",
+                "text":"what is the symbol of HIV ï¿½positive people",
                 "options":[
                     {
                         "text": "A. red ribbon",
@@ -881,7 +881,7 @@
             {
                 "id": "hiv19h22",
                 "type": "simple",
-                "text": "Is it possible for parent living with HIV to have an hiv negative baby.",
+                "text": "Is it possible for parents living with HIV to have an HIV negative baby.",
                 "options":[
                     {
                         "text":"A. Yes",
@@ -889,7 +889,7 @@
                     },
                     {
                         "text":"B. No",
-                        "ans":true
+                        "ans":false
                     }
                     
                 ]
@@ -1143,7 +1143,7 @@
                         "ans":false
                     },
                     {
-                        "text":"D. Enable you to live just as long and well as people who don’t have HIV",
+                        "text":"D. Enable you to live just as long and well as people who donï¿½t have HIV",
                         "ans":true
                     }
                 ]
@@ -1220,7 +1220,7 @@
             {
                 "id":"hiv19h38",
                 "type":"simple",
-                "text":"what should you do if your medicine isn’t agreeing with you",
+                "text":"what should you do if your medicine isnï¿½t agreeing with you",
                 "options": [
                     {
                         "text":"A.  look for alternative herbal medicine",
@@ -1246,15 +1246,15 @@
                 "text":"What does being undetectable mean",
                 "options": [
                     {
-                        "text":"A. you don’t have symptoms  so there is no evidence that you have HIV",
+                        "text":"A. you donï¿½t have symptoms  so there is no evidence that you have HIV",
                         "ans":false
                     },
                     {
-                        "text":"B. other people can’t tell you have hiv because your treatment is working",
+                        "text":"B. other people canï¿½t tell you have hiv because your treatment is working",
                         "ans":false
                     },
                     {
-                        "text":"C. The level of hiv in the blood is so low it can't  be detected in test and can’t be passed on",
+                        "text":"C. The level of hiv in the blood is so low it can't  be detected in test and canï¿½t be passed on",
                         "ans":true
                     },
                     {
@@ -1512,7 +1512,7 @@
                         "ans":false
                     },
                     {
-                        "text":"C.High dose ß-carotene supplements",
+                        "text":"C.High dose ï¿½-carotene supplements",
                         "ans":true
                     },
                     {
@@ -1571,7 +1571,7 @@
     },
     "hepatitis": {
         "title": "Hepatitis",
-        "description": "hepatitis",
+        "description": "Hepatitis is a disease characterized by the inflammation of the liver, caused by virus or toxin or heavy alcohol use. There are 5 main viruses; referred to as A, B, C, D and E. A and E are caused by the ingestion of contaminated food water while B, C and D are caused by contact with a contaminated body fluids. About 1 million people die each year from causes related to Hepatitis. Some people with hepatitis have no symptoms. Some forms of the virus are mild, can be eliminated from the body and other remain for lifetime and cause serious problems like cirrhosis or cancer.",
         "questions": []
     }   
 }
