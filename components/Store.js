@@ -25,14 +25,16 @@ export function initialize(apiKey) {
   State.posts = [
     {
       id: '1',
+      desease: 'malaria',
       name: 'mosquito',
       author: 'joel',
       description: 'This is a mosquito nothing more nothing less',
-      source: 'sphere/mosquito.glb',
+      source: 'sphere/mosquito.gltf',
       preview: 'mosquito.jpg',
     },
     {
       id: '2',
+      desease: 'hiv_aids',
       name: 'mosquito',
       author: 'joel',
       description: 'This is a mosquito nothing more nothing less',
@@ -41,6 +43,16 @@ export function initialize(apiKey) {
     },
     {
       id: '3',
+      desease: 'breast_cancer',
+      name: 'mosquito',
+      author: 'joel',
+      description: 'This is a mosquito nothing more nothing less',
+      source: 'sphere/scene.gltf',
+      preview: 'mosquito.jpg',
+    },
+    {
+      id: '4',
+      desease: 'hepatitis',
       name: 'mosquito',
       author: 'joel',
       description: 'This is a mosquito nothing more nothing less',
