@@ -10,19 +10,19 @@
                 "text": " Trophozoites, Schizonts and gametocytes of all the malarial parasites are seen in the peripheral blood smear except;",
                 "options": [
                     {
-                        "text": "P. falciparum",
+                        "text": "A. falciparum",
                         "ans": true
                     },
                     {
-                        "text": "P. ovale",
+                        "text": "B. ovale",
                         "ans": false
                     },
                     {
-                        "text": "P. malariae",
+                        "text": "C. malariae",
                         "ans": false
                     },
                     {
-                        "text": "P. vivax",
+                        "text": "D. vivax",
                         "ans": false
                     }
                 ]
@@ -33,19 +33,19 @@
                 "text": " Black water fever is a special manifestation of malaria caused by",
                 "options": [
                     {
-                        "text": "P. falciparum",
+                        "text": "A. falciparum",
                         "ans": true
                     },
                     {
-                        "text": "P. ovale",
+                        "text": "B. ovale",
                         "ans": false
                     },
                     {
-                        "text": "P. malariae",
+                        "text": "C. malariae",
                         "ans": false
                     },
                     {
-                        "text": "P. vivax",
+                        "text": "D. vivax",
                         "ans": false
                     }
                 ]
@@ -56,19 +56,19 @@
                 "text": " After sporozoite gain entrance to human body it undergoes developmental cycle first in liver than in RBC, only after which fever is seen. This incubation period varies between plasmodium species, and ………….. species has longest incubation period.",
                 "options": [
                     {
-                        "text": "P. falciparum",
+                        "text": "A. falciparum",
                         "ans": false
                     },
                     {
-                        "text": "P. ovale",
+                        "text": "B. ovale",
                         "ans": false
                     },
                     {
-                        "text": "P. malariae",
+                        "text": "C. malariae",
                         "ans": true
                     },
                     {
-                        "text": "P. vivax",
+                        "text": "D. vivax",
                         "ans": false
                     }
                 ]
@@ -79,19 +79,19 @@
                 "text": "Mosquitoes is/are the vector in the following disorder(s)",
                 "options": [
                     {
-                        "text": "Onchocerciasis",
+                        "text": "A. Onchocerciasis",
                         "ans": false
                     },
                     {
-                        "text": "Visceral leishmaniasis",
+                        "text": "B. Visceral leishmaniasis",
                         "ans": false
                     },
                     {
-                        "text": "African trypanosomiasis",
+                        "text": "A. African trypanosomiasis",
                         "ans": false
                     },
                     {
-                        "text": "Bancroftian filariasis",
+                        "text": "C. Bancroftian filariasis",
                         "ans": true
                     }
                 ]
@@ -103,19 +103,19 @@
                 "text": "How can you contract Malaria?",
                 "options": [
                     {
-                        "text": "Coughing on someone",
+                        "text": "A. Coughing on someone",
                         "ans": false
                     },
                     {
-                        "text": "Physical Contact",
+                        "text": "B. Physical Contact",
                         "ans": false
                     },
                     {
-                        "text": "An infected mosquito biting you",
+                        "text": "C. An infected mosquito biting you",
                         "ans": true
                     },
                     {
-                        "text": "Drinking infected water",
+                        "text": "D. Drinking infected water",
                         "ans": false
                     }
                 ]
@@ -127,19 +127,19 @@
                 "text": "What organ in your body does Malaria effect the most?",
                 "options": [
                     {
-                        "text": "Heart",
+                        "text": "A. Heart",
                         "ans": false
                     },
                     {
-                        "text": "Brain",
+                        "text": "B. Brain",
                         "ans": false
                     },
                     {
-                        "text": "Small Intestine",
+                        "text": "C. Small Intestine",
                         "ans": false
                     },
                     {
-                        "text": "Liver",
+                        "text": "D. Liver",
                         "ans": true
                     }
                 ]
@@ -151,19 +151,19 @@
                 "text": "Malaria is mainly found in:",
                 "options": [
                     {
-                        "text": "Africa",
+                        "text": "A. Africa",
                         "ans": true
                     },
                     {
-                        "text": "Canada",
+                        "text": "B. Canada",
                         "ans": false
                     },
                     {
-                        "text": "Alaska",
+                        "text": "C. Alaska",
                         "ans": false
                     },
                     {
-                        "text": "Australia",
+                        "text": "D. Australia",
                         "ans": false
                     }
                 ]
@@ -175,11 +175,11 @@
                 "text": "Fever is a Symtom of Malaria.",
                 "options": [
                     {
-                        "text": "True",
+                        "text": "A. True",
                         "ans": true
                     },
                     {
-                        "text": "False",
+                        "text": "B. False",
                         "ans": false
                     }
                 ]
@@ -190,11 +190,11 @@
                 "text": "Blurry Visionis a Symtom of Malaria",
                 "options": [
                     {
-                        "text": "True",
+                        "text": "A. True",
                         "ans": false
                     },
                     {
-                        "text": "False",
+                        "text": "B. False",
                         "ans": true
                     }
                 ]
@@ -205,11 +205,11 @@
                 "text": "Sweating is a Symtom of Malaria",
                 "options": [
                     {
-                        "text": "True",
+                        "text": "A. True",
                         "ans": true
                     },
                     {
-                        "text": "False",
+                        "text": "B. False",
                         "ans": false
                     }
                 ]
@@ -220,11 +220,11 @@
                 "text": "Fatigue is a Symtom of Malaria",
                 "options": [
                     {
-                        "text": "True",
+                        "text": "A. True",
                         "ans": true
                     },
                     {
-                        "text": "False",
+                        "text": "C. False",
                         "ans": false
                     }
                 ]
@@ -235,11 +235,11 @@
                 "text": "Enlarged Spleen is a Symtom of Malaria.",
                 "options": [
                     {
-                        "text": "True",
+                        "text": "A. True",
                         "ans": false
                     },
                     {
-                        "text": "False",
+                        "text": "B. False",
                         "ans": true
                     }
                 ]
@@ -250,19 +250,19 @@
                 "text": "Where is Malaria most common within Africa?",
                 "options": [
                     {
-                        "text": "Southern Africa",
+                        "text": "A. Southern Africa",
                         "ans": true
                     },
                     {
-                        "text": "Central Africa",
+                        "text": "B. Central Africa",
                         "ans": false
                     },
                     {
-                        "text": "Western Africa",
+                        "text": "C. Western Africa",
                         "ans": false
                     },
                     {
-                        "text": "Northern Africa",
+                        "text": "D. Northern Africa",
                         "ans": false
                     }
                 ]
@@ -273,19 +273,19 @@
                 "text": "Mosquito responsible for malaria transmission",
                 "options": [
                     {
-                        "text": "Aedes aegypti",
+                        "text": "A. Aedes aegypti",
                         "ans": false
                     },
                     {
-                        "text": "Anopheles",
+                        "text": "B. Anopheles",
                         "ans": true
                     },
                     {
-                        "text": "Aedes albopictus",
+                        "text": "C. Aedes albopictus",
                         "ans": false
                     },
                     {
-                        "text": "Haemagogus",
+                        "text": "D. Haemagogus",
                         "ans": false
                     }
                 ]
@@ -296,15 +296,15 @@
                 "text": "How many people are at risk of malaria in the world?",
                 "options": [
                     {
-                        "text": "1.2 million people",
+                        "text": "A. 1.2 million people",
                         "ans": false
                     },
                     {
-                        "text": "1.2 billion peoplea",
+                        "text": "B. 1.2 billion peoplea",
                         "ans": false
                     },
                     {
-                        "text": "3.2 billion people",
+                        "text": "C. 3.2 billion people",
                         "ans": true
                     }
                 ]
@@ -315,11 +315,11 @@
                 "text": "Malaria can be lethal",
                 "options": [
                     {
-                        "text": "True",
+                        "text": "A. True",
                         "ans": true
                     },
                     {
-                        "text": "False",
+                        "text": "B. False",
                         "ans": false
                     }
                 ]
@@ -330,15 +330,15 @@
                 "text": "I can protect myself from malaria",
                 "options": [
                     {
-                        "text": "Using mosquito repellent",
+                        "text": "A. Using mosquito repellent",
                         "ans": true
                     },
                     {
-                        "text": "Wearing light-coloured, long-sleeved shirts and trousers",
+                        "text": "B. Wearing light-coloured, long-sleeved shirts and trousers",
                         "ans": false
                     },
                     {
-                        "text": "Sleeping under insecticide-treated bed nets",
+                        "text": "C. Sleeping under insecticide-treated bed nets",
                         "ans": true
                     }
                     
@@ -350,11 +350,11 @@
                 "text": "There is no treatment against malaria",
                 "options": [
                     {
-                        "text": "True",
+                        "text": "A. True",
                         "ans": false
                     },
                     {
-                        "text": "False",
+                        "text": "B. False",
                         "ans": true
                     }
                 ]
@@ -365,11 +365,11 @@
                 "text": "There is a vaccine against malaria",
                 "options": [
                     {
-                        "text": "True",
+                        "text": "A. True",
                         "ans": false
                     },
                     {
-                        "text": "False",
+                        "text": "B. False",
                         "ans": true
                     }
                 ]
@@ -1340,14 +1340,14 @@
             {
                 "id":"brc19bc00",
                 "type":"simple",
-                "text":"Which are the four most common cancers in the UK",
+                "text":"Which are the four most common cancers in the UK?",
                 "options": [
                     {
                         "text":"A. Pancreas, bladder, brain, lung",
                         "ans":false
                     },
                     {
-                        "text":"B.  Stomach, breast, kidney, melanoma",
+                        "text":"B. Stomach, breast, kidney, melanoma",
                         "ans":false
                     },
                     {
@@ -1420,7 +1420,7 @@
                         "ans":false
                     },
                     {
-                        "text":"C.  Salt and salt-preserved foods",
+                        "text":"C. Salt and salt-preserved foods",
                         "ans":true
                     },
                     {
@@ -1489,11 +1489,11 @@
                         "ans":false
                     },
                     {
-                        "text":"C.Alcohol",
+                        "text":"C. Alcohol",
                         "ans":false
                     },
                     {
-                        "text":"D.Salt",
+                        "text":"D. Salt",
                         "ans":false
                     }
                 ]
@@ -1504,19 +1504,19 @@
                 "text":"Which of these factors increases the risk for lung cancer?",
                 "options": [
                     {
-                        "text":"A.Saturated fat",
+                        "text":"A. Saturated fat",
                         "ans":false
                     },
                     {
-                        "text":"B.Obesity",
+                        "text":"B. Obesity",
                         "ans":false
                     },
                     {
-                        "text":"C.High dose �-carotene supplements",
+                        "text":"C. High dose �-carotene supplements",
                         "ans":true
                     },
                     {
-                        "text":"D.Alcohol",
+                        "text":"D. Alcohol",
                         "ans":false
                     }
                 ]
@@ -1527,19 +1527,19 @@
                 "text":"Approximately what proportion of cancers in the UK is caused by dietary factors, including obesity and alcohol?",
                 "options": [
                     {
-                        "text":"A.10%",
+                        "text":"A. 10%",
                         "ans":false
                     },
                     {
-                        "text":"B.20%",
+                        "text":"B. 20%",
                         "ans":false
                     },
                     {
-                        "text":"C.30%",
+                        "text":"C. 30%",
                         "ans":true
                     },
                     {
-                        "text":"D.40%",
+                        "text":"D. 40%",
                         "ans":false
                     }
                 ]
@@ -1564,6 +1564,210 @@
                     {
                         "text":"D.Thyroxine",
                         "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc10",
+                "type":"simple",
+                "text":"Which of the following are true of breast cancer?",
+                "options": [
+                    {
+                        "text":"A.The life time risk for a women  of developing breast cancer is 1/9",
+                        "ans":true
+                    },
+                    {
+                        "text":"B. For most women a specific cause of their breast cancer is known",
+                        "ans":false
+                    },
+                    {
+                        "text":"C. Prognosis Is worse for affluent women",
+                        "ans":false
+                    },
+                    {
+                        "text":"D. Incidence of breast cancer is decreasing",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc11",
+                "type":"simple",
+                "text":"All women are at risk developing breat cancer?",
+                "options": [
+                    {
+                        "text":"A.True",
+                        "ans":true
+                    },
+                    {
+                        "text":"B.False",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc12",
+                "type":"simple",
+                "text":"Risk factor for breast cancer includ",
+                "options": [
+                    {
+                        "text":"A. Young age",
+                        "ans":false
+                    },
+                    {
+                        "text":"B.Young age at menopause",
+                        "ans":false
+                    },
+                    {
+                        "text":"C.Young age at first birth",
+                        "ans":false
+                    },
+                    {
+                        "text":"D. Younge age at menarche",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc13",
+                "type":"simple",
+                "text":"Wat is the largest cause of death in women aged 65 and under",
+                "options": [
+                    {
+                        "text":"A. Breast cancer",
+                        "ans":true
+                    },
+                    {
+                        "text":"B. AIDS",
+                        "ans":false
+                    },
+                    {
+                        "text":"C. Heart disease",
+                        "ans":false
+                    },
+                    {
+                        "text":"D. Malaria",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc14",
+                "type":"simple",
+                "text":"BReat cancer is the leading cause of death in women ages?",
+                "options": [
+                    {
+                        "text":"A. 14-54",
+                        "ans":true
+                    },
+                    {
+                        "text":"B. 22-68",
+                        "ans":false
+                    },
+                    {
+                        "text":"C. 37-50",
+                        "ans":false
+                    },
+                    {
+                        "text":"D. 16-63",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc15",
+                "type":"simple",
+                "text":"There is no breat cancer screening tool for women 40 and under?",
+                "options": [
+                    {
+                        "text":"A. True",
+                        "ans":true
+                    },
+                    {
+                        "text":"B. False",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc16",
+                "type":"simple",
+                "text":"Which of the following is not neccesary when a patient first present with breast lump?",
+                "options": [
+                    {
+                        "text":"A. Fine needle aspiration",
+                        "ans":false
+                    },
+                    {
+                        "text":"B. Chest x-ray",
+                        "ans":true
+                    },
+                    {
+                        "text":"C. Examination of auxillary lump node",
+                        "ans":false
+                    },
+                    {
+                        "text":"D. Examination of breat with patient supine",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc17",
+                "type":"simple",
+                "text":"Findig early breat cancer is the key to succesful treatment?",
+                "options": [
+                    {
+                        "text":"A.True",
+                        "ans":true
+                    },
+                    {
+                        "text":"B. False",
+                        "ans":false
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc18",
+                "type":"simple",
+                "text":"Old women are more likely to develop breast cancer?",
+                "options": [
+                    {
+                        "text":"A. True",
+                        "ans":true
+                    },
+                    {
+                        "text":"B. False",
+                        "ans":false
+                    }
+                ]
+            },{
+                "id":"brc19bc19",
+                "type":"simple",
+                "text":"Most breast lumps are cancer?",
+                "options": [
+                    {
+                        "text":"A. True",
+                        "ans":false
+                    },
+                    {
+                        "text":"B. False",
+                        "ans":true
+                    }
+                ]
+            },
+            {
+                "id":"brc19bc20",
+                "type":"simple",
+                "text":"It's  Ok to use deodorant on the day you have a mammorgram?",
+                "options": [
+                    {
+                        "text":"A. True",
+                        "ans":false
+                    },
+                    {
+                        "text":"B. False",
+                        "ans":true
                     }
                 ]
             }
