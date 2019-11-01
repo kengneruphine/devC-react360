@@ -27,19 +27,36 @@ class ModelView extends React.Component {
     }
     const post = this.props.posts[this.props.current];
     const source = post.source;
-    return (
-      <View>
-        <AmbientLight intensity={1.0} color={'#ffffff'} />
-        <PointLight
-          intensity={0.4}
-          style={{transform: [{translate: [0, 4, -1]}]}}
-        />
-        <AnimatedEntity
-          style={{transform: [ {translate: [0, 0, -30]}]}}
-          source={{gltf2: asset(source)}}
-        />
-      </View>
-    );
+    if(post.format === "gltf") {
+      return (
+        <View>
+          <AmbientLight intensity={1.0} color={'#ffffff'} />
+          <PointLight
+            intensity={0.4}
+            style={{transform: [{translate: [0, 4, -1]}]}}
+          />
+          <AnimatedEntity
+            style={{transform: [ {translate: [0, 0, -30]}]}}
+            source={{gltf2: asset(source)}}
+          />
+        </View>
+      );
+    } else {
+      texture = post.texture;
+      return (
+        <View>
+          <AmbientLight intensity={1.0} color={'#ffffff'} />
+          <PointLight
+            intensity={0.4}
+            style={{transform: [{translate: [0, 4, -1]}]}}
+          />
+          <AnimatedEntity
+            style={{transform: [ {translate: [0, 0, -30]}]}}
+            source={{obj: asset(source), mtl: asset(texture)}}
+          />
+        </View>
+      );
+    }
   }
 }
 

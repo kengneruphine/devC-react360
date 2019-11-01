@@ -34,7 +34,7 @@ export default class ExploreOne extends React.Component {
     render() {
       return (
         <View>
-          <Text style={{textAlign: 'center'}}>Malaria</Text>
+          <Text style={{textAlign: 'center'}}>Anatomy</Text>
           <View style={[styles.option, {borderColor: 'red'}]}>
             <VrButton style={styles.backButton} onClick={() => this.props.history.goBack()} >
                 <Text style={{textAlign: 'center'}}>BACK</Text>

@@ -1,0 +1,9 @@
+newmtl N3iLleather_White
+Ka 0.000000 0.000000 0.000000
+Kd 0.925490 0.890196 0.823529
+Ks 0.086275 0.086275 0.086275
+Ns 512.000000
+d 1.000000
+Tr 0.000000
+map_Kd N3iLleather_White - Default Texture.psd 
+
