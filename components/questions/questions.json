@@ -377,7 +377,7 @@
         ]
     },
 
-        "hiv_aids": {
+    "hiv_aids": {
             "title": "HIV/AIDS",
             "description": "The human immunodeficiency virus (HIV) is the virus that kills the body immune system by destroying the white blood cells that fight infection and put you at risk for serious infections or cancers.  HIV also applied to refer to the HIV infection which is a sexual transmitted infection: it can spread by contact with certain bodily fluids of a person with HIV or from a mother to the child during pregnancy, childbirth or breastfeeding. \n AIDS is most advanced stage of HIV infection that occurs when the body’s immune system is badly damaged because of the virus. \n HIV/AIDS has a large impact on society both as illness and as a source of discrimination. There is not cure but there are medicines that fight HIV/AIDS and lower the risk of infecting other",
             "questions": [
@@ -1608,7 +1608,7 @@
             {
                 "id":"brc19bc12",
                 "type":"simple",
-                "text":"Risk factor for breast cancer includ",
+                "text":"Risk factor for breast cancer include",
                 "options": [
                     {
                         "text":"A. Young age",
@@ -1616,14 +1616,14 @@
                     },
                     {
                         "text":"B.Young age at menopause",
-                        "ans":false
+                        "ans":true
                     },
                     {
                         "text":"C.Young age at first birth",
                         "ans":false
                     },
                     {
-                        "text":"D. Younge age at menarche",
+                        "text":"D. Young age at menarche",
                         "ans":false
                     }
                 ]
