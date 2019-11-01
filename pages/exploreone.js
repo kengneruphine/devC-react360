@@ -6,9 +6,11 @@ import {
     StyleSheet,
     Text,
     VrButton,
+    Image,
+    asset,
     NativeModules,
 } from 'react-360';
-const { AudioModule, VideoModule, SurfaceManagement } = NativeModules;
+const { SurfaceManagement } = NativeModules;
 import TopPosts from '../components/explore/TopPosts';
 import CurrentPost from '../components/explore/CurrentPost';
 import ModelView from '../components/explore/ModelView';
@@ -34,11 +36,16 @@ export default class ExploreOne extends React.Component {
     render() {
       return (
         <View>
-          <Text style={{textAlign: 'center'}}>Malaria</Text>
-          <View style={[styles.option, {borderColor: 'red'}]}>
-            <VrButton style={styles.backButton} onClick={() => this.props.history.goBack()} >
-                <Text style={{textAlign: 'center'}}>BACK</Text>
-            </VrButton>
+          <View>
+            <VrButton onClick={() => {
+                        this.props.history.goBack()
+                    }}>
+                        <Image style={{
+                              width: 40,
+                              height: 40,
+                          }}
+                              source={asset('img/nav_back.png')} />
+              </VrButton> 
           </View>
             
         </View>
