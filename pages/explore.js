@@ -9,9 +9,9 @@ import {
     VrButton
 } from 'react-360';
 import {NativeModules} from 'react-360';
-import questions from '../components/questions/questions.json'
+import exploreOpt from '../components/explore/explore.json'
 const {TemporalStore, SurfaceManagement} = NativeModules;
-const Diseases = Object.keys(questions)
+const ExploreObj = Object.keys(exploreOpt);
 
 export default class Explore extends React.Component {
   constructor(props){
@@ -26,13 +26,13 @@ export default class Explore extends React.Component {
               <Text style={{textAlign: 'center', padding: 2}}>Select an option to Explore</Text>
             </View>
           {
-              Diseases.map( (disease, i) => (
-              <View key={disease} style={styles.option}>
+              ExploreObj.map( (expl, i) => (
+              <View key={expl} style={styles.option}>
                     <VrButton style={styles.button} onClick={ () => { 
-                        TemporalStore.quiz.currentQuiz = disease
+                        TemporalStore.currentExpl = expl
                         this.props.history.push('/explore/one')
                     }}>
-                        <Text style={{color: 'white'}}>{questions[disease].title}</Text>
+                        <Text style={{color: 'white'}}>{exploreOpt[expl].name}</Text>
                     </VrButton>
             </View>))
           }
