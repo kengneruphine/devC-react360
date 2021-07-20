@@ -14,7 +14,7 @@
     "react": "16.3.2",
     "react-360": "~1.1.0",
     "react-360-web": "~1.1.0",
-    "react-native": "^0.60.5",
+    "react-native": "^0.62.3",
     "react-router": "^5.0.1",
     "three": "^0.125.0"
   },
