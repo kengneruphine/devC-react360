@@ -6964,10 +6964,10 @@ three-gltf2-loader@~1.2.0:
   resolved "https://registry.yarnpkg.com/three-gltf2-loader/-/three-gltf2-loader-1.2.0.tgz#1fffae0659b1490034e6d055c7aabc439ab5de21"
   integrity sha512-CFB9wcKTBpADh6wVq32XYx81LyNS7j8e8edgdMEBLedz+Wle1Ytbh8h6qEa4XFLR4dFArVmwC244EQOyXUYfqA==
 
-three@^0.125.0:
-  version "0.125.0"
-  resolved "https://registry.yarnpkg.com/three/-/three-0.125.0.tgz#19e922b9dc51ad0b706893aeee888de68e99850a"
-  integrity sha512-qL36qUGsPQ/Ofo/RZdXwHwM7A8wzUSAIyawtjIebJSPvounUQeneSqxI0aBY2iwKpseGy+RUtj3C5f/z4poyXw==
+three@^0.137.0:
+  version "0.137.0"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.137.0.tgz#0ebd6ba66637a332c31f234bcdd35aeec071a6e3"
+  integrity sha512-rzSDhia6cU35UCy6y+zEEws6vSgytfHqFMSaBvUcySgzwvDO6vETyswtSNi/+aVqJw8WLMwyT1mlQQ1T/dxxOA==
 
 throat@^4.0.0, throat@^4.1.0:
   version "4.1.0"
